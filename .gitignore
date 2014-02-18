@@ -1,0 +1,17 @@
+/target
+/classes
+/checkouts
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+.lein*
+.#*
+.DS_Store
+*~
+target/repl-port
+.idea/
+*.iml
+*.iws

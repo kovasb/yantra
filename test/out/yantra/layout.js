@@ -10,6 +10,6 @@ goog.require('om.core');
 goog.require('React');
 goog.require('yantra.datatypes');
 goog.require('yantra.datatypes');
-yantra.layout.layout_renderers = new cljs.core.PersistentArrayMap.fromArray([yantra.datatypes.Column,(function (cursor,owner,opts){var builder = om.core.get_shared.call(null,owner,new cljs.core.Keyword(null,"builder","builder",1244848909));return React.DOM.div(null,cljs.core.into_array.call(null,cljs.core.map.call(null,(function (p1__9215_SHARP_){return React.DOM.div(null,builder.call(null,p1__9215_SHARP_));
+yantra.layout.layout_renderers = new cljs.core.PersistentArrayMap.fromArray([yantra.datatypes.Column,(function (cursor,owner,opts){var builder = om.core.get_shared.call(null,owner,new cljs.core.Keyword(null,"builder","builder",1244848909));return React.DOM.div(null,cljs.core.into_array.call(null,cljs.core.map.call(null,(function (p1__9239_SHARP_){return React.DOM.div(null,builder.call(null,p1__9239_SHARP_));
 }),new cljs.core.Keyword(null,"contents","contents",4741549708).cljs$core$IFn$_invoke$arity$1(cursor))));
 })], true, false);

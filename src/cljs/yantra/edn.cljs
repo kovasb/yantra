@@ -107,7 +107,11 @@
 
 (def edn-renderers
   (thread-sets
-    {js/String
+    {
+    nil (fn [cursor owner opts] (dom/span nil "nil"))
+    UUID (fn [cursor owner opts] (dom/span nil "UUID"))
+
+    js/String
      (fn [cursor owner opts]
        (reify
          om/IRender

@@ -10,6 +10,8 @@
    {:record yantra.datatypes.Line :tag "yantra.graphics/Line"}
    {:record yantra.datatypes.Disk :tag "yantra.graphics/Disk"}
    {:record yantra.datatypes.Rectangle :tag "yantra.graphics/Rectangle"}
-   {:record yantra.datatypes.Style :tag "yantra.graphics/Style"}])
+   {:record yantra.datatypes.Style :tag "yantra.graphics/Style"}
+   {:record yantra.datatypes.ListLinePlot :tag "yantra.plot/ListLinePlot"}
+   {:record yantra.datatypes.BarChart :tag "yantra.plot/BarChart"}])
 
 

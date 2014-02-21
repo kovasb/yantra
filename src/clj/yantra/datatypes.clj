@@ -15,3 +15,6 @@
 (defrecord Rectangle [p1 p2])
 
 (defrecord Style [style prims])
+
+(defrecord ListPlot [data opts])
+

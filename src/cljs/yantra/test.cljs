@@ -5,6 +5,7 @@
     [yantra.controls :as yc]
     [yantra.layout :as yl]
     [yantra.edn :as ye]
+    [yantra.plot :as yp]
     React
     [om.core :as om :include-macros true]
     [om.dom :as dom :include-macros true]))
@@ -12,59 +13,14 @@
 
 
 
-
-(comment
-  (def app-state
-   (yg/Graphics.
-     [(yg/Disk. [0 0] 1)
-      (yg/Disk. [0 2] 1)
-      (yg/Disk. [2 0] 1)
-      (yg/Disk. [20 0] 1)
-      ]))
-
-  (def app-state
-    (yc/Slider.
-      4
-      [1 10]))
-
-  (def app-state
-    (yl/Column.
-      [(yc/Slider.
-         4
-         [1 10])
-       (yc/Slider.
-         5
-         [1 10])
-       (yantra.datatypes.Graphics.
-         [(yantra.datatypes.Disk. [0 0] 1)
-          (yantra.datatypes.Disk. [10 2] 1)
-          (yantra.datatypes.Disk. [2 0] 1)
-          ])])))
-
-(comment
-  (def app-state
-   (Module.
-     {:x 1}
-     (yl/Column.
-       [
-        (yc/Slider.
-          (Reference. :x)
-          [1 10])
-        (yg/Graphics.
-          [(yg/Disk. [(Reference. :x) 0] 1)
-           (yg/Disk. [10 2] 1)
-           (yg/Disk. [2 0] 1)
-           ;;(yg/Disk. [20 0] 1)
-           ])
-        ]))))
-
-
-
-(def app-state 1)
-
-
 (def tests
-  { :graphics-1
+
+  { :plot-1 (dt/BarChart. [1 2 6 5 4] {:labels ["a" "b" "c" "d" "e"]})
+    :plot-2 (dt/ListLinePlot. [1 2 3 6 5 4 3 1] nil)
+    :plot-3 [(dt/ListLinePlot. [1 2 3 6 5 4 3 1] nil) (dt/ListLinePlot. [1 2 3 6 5 4 3 1] nil)]
+    :plot-4 (dt/ListLinePlot. [[1 1] [10 4] [11 6] [20 40] [30 5]] nil)
+
+    :graphics-1
            (dt/Column.
              [(dt/Slider.
                 4
@@ -99,7 +55,7 @@
 
    })
 
-(def renderers (merge yg/graphics-renderers yc/control-renderers yl/layout-renderers ye/edn-renderers))
+(def renderers (merge yg/graphics-renderers yc/control-renderers yl/layout-renderers ye/edn-renderers yp/plot-renderers))
 
 
 (defn builder [x y]
@@ -119,7 +75,7 @@
 (defn ^:export start []
   (let []
     (om/root
-      (atom (:column-2 tests))
+      (atom (:plot-4 tests))
       {:builder builder}
       (fn [app owner]
         (builder app {}))

@@ -10,6 +10,7 @@
    {:record dt/Line :tag "yantra.graphics/Line"}
    {:record dt/Disk :tag "yantra.graphics/Disk"}
    {:record dt/Rectangle :tag "yantra.graphics/Rectangle"}
-   {:record dt/Style :tag "yantra.graphics/Style"}])
-
+   {:record dt/Style :tag "yantra.graphics/Style"}
+   {:record dt/ListLinePlot :tag "yantra.plot/ListLinePlot"}
+   {:record dt/BarChart :tag "yantra.plot/BarChart"}])
 

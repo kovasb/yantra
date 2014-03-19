@@ -18,3 +18,6 @@
 
 (defrecord ListPlot [data opts])
 
+(defrecord ListLinePlot [data opts])
+
+(defrecord BarChart [data opts])

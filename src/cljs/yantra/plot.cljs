@@ -95,6 +95,13 @@
       (reify
         om/IRender
         (render  [_] (dom/span #js {:ref "theElt"} ""))
+        om/IDidUpdate
+        (did-update [this prev-props prev-state root-node]
+          (.spec vg.parse
+                 (clj->js (list-line-plot-spec (om/value cursor)))
+                 (fn [chart]
+                   (.update (chart #js {:el (om/get-node owner "theElt")})))))
+
         om/IDidMount
         (did-mount [_ _]
           (.spec vg.parse
@@ -107,6 +114,12 @@
       (reify
         om/IRender
         (render  [_] (dom/span #js {:ref "theElt"} ""))
+        om/IDidUpdate
+        (did-update [this prev-props prev-state root-node]
+          (.spec vg.parse
+                 (clj->js (bar-chart-spec (om/value cursor)))
+                 (fn [chart]
+                   (.update (chart #js {:el (om/get-node owner "theElt")})))))
         om/IDidMount
         (did-mount [_ _]
           (.spec vg.parse

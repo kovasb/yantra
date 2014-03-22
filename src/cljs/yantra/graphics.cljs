@@ -14,7 +14,15 @@
 (defprotocol BoundingBox
   (bounding-points [x]))
 
+(declare bounding-box)
+
 (extend-protocol BoundingBox
+  default
+  (bounding-points [this] (if (or (seq? this) (vector? this))
+                            (bounding-box this)
+                            []))
+  dt/Style
+  (bounding-points [this] (bounding-points (:prims this)))
   dt/Point
   (bounding-points [this] [(:point this)])
   dt/Line
@@ -100,8 +108,28 @@
 
 
 
+
 (def graphics-renderers
-  {dt/Point    (fn [cursor owner opts]
+
+  {dt/Style (fn [cursor owner opts]
+              (let [e (om/value cursor)
+                    coordfn (:coord-fn opts)
+                    distancefn (:distance-fn opts)
+                    builder (om/get-shared owner :builder )]
+                (dom/g
+                  (clj->js {:style (:style e)})
+                       (if (or (seq? (:prims e)) (vector? (:prims e)))
+                         (into-array
+                           (map #(builder % {:opts {:coord-fn coordfn :distance-fn distancefn}})
+                                (:prims cursor)))
+                          (builder (:prims cursor) {:opts {:coord-fn coordfn :distance-fn distancefn}}))))
+             
+
+
+
+              )
+
+    dt/Point    (fn [cursor owner opts]
              (let [p2 (:point (om/value cursor))]
                (dom/circle {:cx (first p2) :cy (last p2) :r "3"})))
 

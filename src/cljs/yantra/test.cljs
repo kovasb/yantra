@@ -15,7 +15,9 @@
 
 (def tests
 
-  { :plot-1 (dt/BarChart. [1 2 6 5 4] {:labels ["a" "b" "c" "d" "e"]})
+  {
+    :string "a\"b\"c"
+    :plot-1 (dt/BarChart. [1 2 6 5 4] {:labels ["a" "b" "c" "d" "e"]})
     :plot-2 (dt/ListLinePlot. [1 2 3 6 5 4 3 1] nil)
     :plot-3 [(dt/ListLinePlot. [1 2 3 6 5 4 3 1] nil) (dt/ListLinePlot. [1 2 3 6 5 4 3 1] nil)]
     :plot-4 (dt/ListLinePlot. [[1 1] [10 4] [11 6] [20 40] [30 5]] nil)
@@ -58,6 +60,7 @@
 (def renderers (merge yg/graphics-renderers yc/control-renderers yl/layout-renderers ye/edn-renderers yp/plot-renderers))
 
 
+
 (defn builder [x y]
   (.log js/console (om/value x))
   (.log js/console (type (om/value x)))
@@ -75,7 +78,7 @@
 (defn ^:export start []
   (let []
     (om/root
-      (atom (:plot-4 tests))
+      (atom (:string tests))
       {:builder builder}
       (fn [app owner]
         (builder app {}))

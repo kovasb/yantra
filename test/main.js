@@ -27494,35 +27494,35 @@ yantra.datatypes.Slider.prototype.cljs$core$ILookup$_lookup$arity$2 = function(t
   var this__3988__auto____$1 = this;
   return cljs.core._lookup.call(null, this__3988__auto____$1, k__3989__auto__, null);
 };
-yantra.datatypes.Slider.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9113, else__3991__auto__) {
+yantra.datatypes.Slider.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9119, else__3991__auto__) {
   var self__ = this;
   var this__3990__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k9113, new cljs.core.Keyword(null, "value", "value", 1125876963))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k9119, new cljs.core.Keyword(null, "value", "value", 1125876963))) {
     return self__.value;
   } else {
-    if (cljs.core.keyword_identical_QMARK_.call(null, k9113, new cljs.core.Keyword(null, "range", "range", 1122184367))) {
+    if (cljs.core.keyword_identical_QMARK_.call(null, k9119, new cljs.core.Keyword(null, "range", "range", 1122184367))) {
       return self__.range;
     } else {
       if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-        return cljs.core.get.call(null, self__.__extmap, k9113, else__3991__auto__);
+        return cljs.core.get.call(null, self__.__extmap, k9119, else__3991__auto__);
       } else {
         return null;
       }
     }
   }
 };
-yantra.datatypes.Slider.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9112) {
+yantra.datatypes.Slider.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9118) {
   var self__ = this;
   var this__3995__auto____$1 = this;
-  var pred__9115 = cljs.core.keyword_identical_QMARK_;
-  var expr__9116 = k__3996__auto__;
-  if (cljs.core.truth_(pred__9115.call(null, new cljs.core.Keyword(null, "value", "value", 1125876963), expr__9116))) {
-    return new yantra.datatypes.Slider(G__9112, self__.range, self__.__meta, self__.__extmap, null);
+  var pred__9121 = cljs.core.keyword_identical_QMARK_;
+  var expr__9122 = k__3996__auto__;
+  if (cljs.core.truth_(pred__9121.call(null, new cljs.core.Keyword(null, "value", "value", 1125876963), expr__9122))) {
+    return new yantra.datatypes.Slider(G__9118, self__.range, self__.__meta, self__.__extmap, null);
   } else {
-    if (cljs.core.truth_(pred__9115.call(null, new cljs.core.Keyword(null, "range", "range", 1122184367), expr__9116))) {
-      return new yantra.datatypes.Slider(self__.value, G__9112, self__.__meta, self__.__extmap, null);
+    if (cljs.core.truth_(pred__9121.call(null, new cljs.core.Keyword(null, "range", "range", 1122184367), expr__9122))) {
+      return new yantra.datatypes.Slider(self__.value, G__9118, self__.__meta, self__.__extmap, null);
     } else {
-      return new yantra.datatypes.Slider(self__.value, self__.range, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9112), null);
+      return new yantra.datatypes.Slider(self__.value, self__.range, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9118), null);
     }
   }
 };
@@ -27570,10 +27570,10 @@ yantra.datatypes.Slider.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(thi
     return false;
   }
 };
-yantra.datatypes.Slider.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9112) {
+yantra.datatypes.Slider.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9118) {
   var self__ = this;
   var this__3987__auto____$1 = this;
-  return new yantra.datatypes.Slider(self__.value, self__.range, G__9112, self__.__extmap, self__.__hash);
+  return new yantra.datatypes.Slider(self__.value, self__.range, G__9118, self__.__extmap, self__.__hash);
 };
 yantra.datatypes.Slider.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__3986__auto__) {
   var self__ = this;
@@ -27599,8 +27599,8 @@ yantra.datatypes.Slider.cljs$lang$ctorPrWriter = function(this__4022__auto__, wr
 yantra.datatypes.__GT_Slider = function __GT_Slider(value, range) {
   return new yantra.datatypes.Slider(value, range);
 };
-yantra.datatypes.map__GT_Slider = function map__GT_Slider(G__9114) {
-  return new yantra.datatypes.Slider((new cljs.core.Keyword(null, "value", "value", 1125876963)).cljs$core$IFn$_invoke$arity$1(G__9114), (new cljs.core.Keyword(null, "range", "range", 1122184367)).cljs$core$IFn$_invoke$arity$1(G__9114), null, cljs.core.dissoc.call(null, G__9114, new cljs.core.Keyword(null, "value", "value", 1125876963), new cljs.core.Keyword(null, "range", "range", 1122184367)));
+yantra.datatypes.map__GT_Slider = function map__GT_Slider(G__9120) {
+  return new yantra.datatypes.Slider((new cljs.core.Keyword(null, "value", "value", 1125876963)).cljs$core$IFn$_invoke$arity$1(G__9120), (new cljs.core.Keyword(null, "range", "range", 1122184367)).cljs$core$IFn$_invoke$arity$1(G__9120), null, cljs.core.dissoc.call(null, G__9120, new cljs.core.Keyword(null, "value", "value", 1125876963), new cljs.core.Keyword(null, "range", "range", 1122184367)));
 };
 yantra.datatypes.Column = function(contents, __meta, __extmap) {
   this.contents = contents;
@@ -27633,28 +27633,28 @@ yantra.datatypes.Column.prototype.cljs$core$ILookup$_lookup$arity$2 = function(t
   var this__3988__auto____$1 = this;
   return cljs.core._lookup.call(null, this__3988__auto____$1, k__3989__auto__, null);
 };
-yantra.datatypes.Column.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9119, else__3991__auto__) {
+yantra.datatypes.Column.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9125, else__3991__auto__) {
   var self__ = this;
   var this__3990__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k9119, new cljs.core.Keyword(null, "contents", "contents", 4741549708))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k9125, new cljs.core.Keyword(null, "contents", "contents", 4741549708))) {
     return self__.contents;
   } else {
     if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-      return cljs.core.get.call(null, self__.__extmap, k9119, else__3991__auto__);
+      return cljs.core.get.call(null, self__.__extmap, k9125, else__3991__auto__);
     } else {
       return null;
     }
   }
 };
-yantra.datatypes.Column.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9118) {
+yantra.datatypes.Column.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9124) {
   var self__ = this;
   var this__3995__auto____$1 = this;
-  var pred__9121 = cljs.core.keyword_identical_QMARK_;
-  var expr__9122 = k__3996__auto__;
-  if (cljs.core.truth_(pred__9121.call(null, new cljs.core.Keyword(null, "contents", "contents", 4741549708), expr__9122))) {
-    return new yantra.datatypes.Column(G__9118, self__.__meta, self__.__extmap, null);
+  var pred__9127 = cljs.core.keyword_identical_QMARK_;
+  var expr__9128 = k__3996__auto__;
+  if (cljs.core.truth_(pred__9127.call(null, new cljs.core.Keyword(null, "contents", "contents", 4741549708), expr__9128))) {
+    return new yantra.datatypes.Column(G__9124, self__.__meta, self__.__extmap, null);
   } else {
-    return new yantra.datatypes.Column(self__.contents, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9118), null);
+    return new yantra.datatypes.Column(self__.contents, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9124), null);
   }
 };
 yantra.datatypes.Column.prototype.cljs$core$IPrintWithWriter$_pr_writer$arity$3 = function(this__4002__auto__, writer__4003__auto__, opts__4004__auto__) {
@@ -27700,10 +27700,10 @@ yantra.datatypes.Column.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(thi
     return false;
   }
 };
-yantra.datatypes.Column.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9118) {
+yantra.datatypes.Column.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9124) {
   var self__ = this;
   var this__3987__auto____$1 = this;
-  return new yantra.datatypes.Column(self__.contents, G__9118, self__.__extmap, self__.__hash);
+  return new yantra.datatypes.Column(self__.contents, G__9124, self__.__extmap, self__.__hash);
 };
 yantra.datatypes.Column.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__3986__auto__) {
   var self__ = this;
@@ -27729,8 +27729,8 @@ yantra.datatypes.Column.cljs$lang$ctorPrWriter = function(this__4022__auto__, wr
 yantra.datatypes.__GT_Column = function __GT_Column(contents) {
   return new yantra.datatypes.Column(contents);
 };
-yantra.datatypes.map__GT_Column = function map__GT_Column(G__9120) {
-  return new yantra.datatypes.Column((new cljs.core.Keyword(null, "contents", "contents", 4741549708)).cljs$core$IFn$_invoke$arity$1(G__9120), null, cljs.core.dissoc.call(null, G__9120, new cljs.core.Keyword(null, "contents", "contents", 4741549708)));
+yantra.datatypes.map__GT_Column = function map__GT_Column(G__9126) {
+  return new yantra.datatypes.Column((new cljs.core.Keyword(null, "contents", "contents", 4741549708)).cljs$core$IFn$_invoke$arity$1(G__9126), null, cljs.core.dissoc.call(null, G__9126, new cljs.core.Keyword(null, "contents", "contents", 4741549708)));
 };
 yantra.datatypes.Graphics = function(contents, __meta, __extmap) {
   this.contents = contents;
@@ -27763,28 +27763,28 @@ yantra.datatypes.Graphics.prototype.cljs$core$ILookup$_lookup$arity$2 = function
   var this__3988__auto____$1 = this;
   return cljs.core._lookup.call(null, this__3988__auto____$1, k__3989__auto__, null);
 };
-yantra.datatypes.Graphics.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9125, else__3991__auto__) {
+yantra.datatypes.Graphics.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9131, else__3991__auto__) {
   var self__ = this;
   var this__3990__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k9125, new cljs.core.Keyword(null, "contents", "contents", 4741549708))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k9131, new cljs.core.Keyword(null, "contents", "contents", 4741549708))) {
     return self__.contents;
   } else {
     if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-      return cljs.core.get.call(null, self__.__extmap, k9125, else__3991__auto__);
+      return cljs.core.get.call(null, self__.__extmap, k9131, else__3991__auto__);
     } else {
       return null;
     }
   }
 };
-yantra.datatypes.Graphics.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9124) {
+yantra.datatypes.Graphics.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9130) {
   var self__ = this;
   var this__3995__auto____$1 = this;
-  var pred__9127 = cljs.core.keyword_identical_QMARK_;
-  var expr__9128 = k__3996__auto__;
-  if (cljs.core.truth_(pred__9127.call(null, new cljs.core.Keyword(null, "contents", "contents", 4741549708), expr__9128))) {
-    return new yantra.datatypes.Graphics(G__9124, self__.__meta, self__.__extmap, null);
+  var pred__9133 = cljs.core.keyword_identical_QMARK_;
+  var expr__9134 = k__3996__auto__;
+  if (cljs.core.truth_(pred__9133.call(null, new cljs.core.Keyword(null, "contents", "contents", 4741549708), expr__9134))) {
+    return new yantra.datatypes.Graphics(G__9130, self__.__meta, self__.__extmap, null);
   } else {
-    return new yantra.datatypes.Graphics(self__.contents, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9124), null);
+    return new yantra.datatypes.Graphics(self__.contents, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9130), null);
   }
 };
 yantra.datatypes.Graphics.prototype.cljs$core$IPrintWithWriter$_pr_writer$arity$3 = function(this__4002__auto__, writer__4003__auto__, opts__4004__auto__) {
@@ -27830,10 +27830,10 @@ yantra.datatypes.Graphics.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(t
     return false;
   }
 };
-yantra.datatypes.Graphics.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9124) {
+yantra.datatypes.Graphics.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9130) {
   var self__ = this;
   var this__3987__auto____$1 = this;
-  return new yantra.datatypes.Graphics(self__.contents, G__9124, self__.__extmap, self__.__hash);
+  return new yantra.datatypes.Graphics(self__.contents, G__9130, self__.__extmap, self__.__hash);
 };
 yantra.datatypes.Graphics.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__3986__auto__) {
   var self__ = this;
@@ -27859,8 +27859,8 @@ yantra.datatypes.Graphics.cljs$lang$ctorPrWriter = function(this__4022__auto__, 
 yantra.datatypes.__GT_Graphics = function __GT_Graphics(contents) {
   return new yantra.datatypes.Graphics(contents);
 };
-yantra.datatypes.map__GT_Graphics = function map__GT_Graphics(G__9126) {
-  return new yantra.datatypes.Graphics((new cljs.core.Keyword(null, "contents", "contents", 4741549708)).cljs$core$IFn$_invoke$arity$1(G__9126), null, cljs.core.dissoc.call(null, G__9126, new cljs.core.Keyword(null, "contents", "contents", 4741549708)));
+yantra.datatypes.map__GT_Graphics = function map__GT_Graphics(G__9132) {
+  return new yantra.datatypes.Graphics((new cljs.core.Keyword(null, "contents", "contents", 4741549708)).cljs$core$IFn$_invoke$arity$1(G__9132), null, cljs.core.dissoc.call(null, G__9132, new cljs.core.Keyword(null, "contents", "contents", 4741549708)));
 };
 yantra.datatypes.Point = function(point, __meta, __extmap) {
   this.point = point;
@@ -27893,28 +27893,28 @@ yantra.datatypes.Point.prototype.cljs$core$ILookup$_lookup$arity$2 = function(th
   var this__3988__auto____$1 = this;
   return cljs.core._lookup.call(null, this__3988__auto____$1, k__3989__auto__, null);
 };
-yantra.datatypes.Point.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9131, else__3991__auto__) {
+yantra.datatypes.Point.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9137, else__3991__auto__) {
   var self__ = this;
   var this__3990__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k9131, new cljs.core.Keyword(null, "point", "point", 1120749826))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k9137, new cljs.core.Keyword(null, "point", "point", 1120749826))) {
     return self__.point;
   } else {
     if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-      return cljs.core.get.call(null, self__.__extmap, k9131, else__3991__auto__);
+      return cljs.core.get.call(null, self__.__extmap, k9137, else__3991__auto__);
     } else {
       return null;
     }
   }
 };
-yantra.datatypes.Point.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9130) {
+yantra.datatypes.Point.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9136) {
   var self__ = this;
   var this__3995__auto____$1 = this;
-  var pred__9133 = cljs.core.keyword_identical_QMARK_;
-  var expr__9134 = k__3996__auto__;
-  if (cljs.core.truth_(pred__9133.call(null, new cljs.core.Keyword(null, "point", "point", 1120749826), expr__9134))) {
-    return new yantra.datatypes.Point(G__9130, self__.__meta, self__.__extmap, null);
+  var pred__9139 = cljs.core.keyword_identical_QMARK_;
+  var expr__9140 = k__3996__auto__;
+  if (cljs.core.truth_(pred__9139.call(null, new cljs.core.Keyword(null, "point", "point", 1120749826), expr__9140))) {
+    return new yantra.datatypes.Point(G__9136, self__.__meta, self__.__extmap, null);
   } else {
-    return new yantra.datatypes.Point(self__.point, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9130), null);
+    return new yantra.datatypes.Point(self__.point, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9136), null);
   }
 };
 yantra.datatypes.Point.prototype.cljs$core$IPrintWithWriter$_pr_writer$arity$3 = function(this__4002__auto__, writer__4003__auto__, opts__4004__auto__) {
@@ -27960,10 +27960,10 @@ yantra.datatypes.Point.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(this
     return false;
   }
 };
-yantra.datatypes.Point.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9130) {
+yantra.datatypes.Point.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9136) {
   var self__ = this;
   var this__3987__auto____$1 = this;
-  return new yantra.datatypes.Point(self__.point, G__9130, self__.__extmap, self__.__hash);
+  return new yantra.datatypes.Point(self__.point, G__9136, self__.__extmap, self__.__hash);
 };
 yantra.datatypes.Point.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__3986__auto__) {
   var self__ = this;
@@ -27989,8 +27989,8 @@ yantra.datatypes.Point.cljs$lang$ctorPrWriter = function(this__4022__auto__, wri
 yantra.datatypes.__GT_Point = function __GT_Point(point) {
   return new yantra.datatypes.Point(point);
 };
-yantra.datatypes.map__GT_Point = function map__GT_Point(G__9132) {
-  return new yantra.datatypes.Point((new cljs.core.Keyword(null, "point", "point", 1120749826)).cljs$core$IFn$_invoke$arity$1(G__9132), null, cljs.core.dissoc.call(null, G__9132, new cljs.core.Keyword(null, "point", "point", 1120749826)));
+yantra.datatypes.map__GT_Point = function map__GT_Point(G__9138) {
+  return new yantra.datatypes.Point((new cljs.core.Keyword(null, "point", "point", 1120749826)).cljs$core$IFn$_invoke$arity$1(G__9138), null, cljs.core.dissoc.call(null, G__9138, new cljs.core.Keyword(null, "point", "point", 1120749826)));
 };
 yantra.datatypes.Line = function(points, __meta, __extmap) {
   this.points = points;
@@ -28023,28 +28023,28 @@ yantra.datatypes.Line.prototype.cljs$core$ILookup$_lookup$arity$2 = function(thi
   var this__3988__auto____$1 = this;
   return cljs.core._lookup.call(null, this__3988__auto____$1, k__3989__auto__, null);
 };
-yantra.datatypes.Line.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9137, else__3991__auto__) {
+yantra.datatypes.Line.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9143, else__3991__auto__) {
   var self__ = this;
   var this__3990__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k9137, new cljs.core.Keyword(null, "points", "points", 4326117461))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k9143, new cljs.core.Keyword(null, "points", "points", 4326117461))) {
     return self__.points;
   } else {
     if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-      return cljs.core.get.call(null, self__.__extmap, k9137, else__3991__auto__);
+      return cljs.core.get.call(null, self__.__extmap, k9143, else__3991__auto__);
     } else {
       return null;
     }
   }
 };
-yantra.datatypes.Line.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9136) {
+yantra.datatypes.Line.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9142) {
   var self__ = this;
   var this__3995__auto____$1 = this;
-  var pred__9139 = cljs.core.keyword_identical_QMARK_;
-  var expr__9140 = k__3996__auto__;
-  if (cljs.core.truth_(pred__9139.call(null, new cljs.core.Keyword(null, "points", "points", 4326117461), expr__9140))) {
-    return new yantra.datatypes.Line(G__9136, self__.__meta, self__.__extmap, null);
+  var pred__9145 = cljs.core.keyword_identical_QMARK_;
+  var expr__9146 = k__3996__auto__;
+  if (cljs.core.truth_(pred__9145.call(null, new cljs.core.Keyword(null, "points", "points", 4326117461), expr__9146))) {
+    return new yantra.datatypes.Line(G__9142, self__.__meta, self__.__extmap, null);
   } else {
-    return new yantra.datatypes.Line(self__.points, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9136), null);
+    return new yantra.datatypes.Line(self__.points, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9142), null);
   }
 };
 yantra.datatypes.Line.prototype.cljs$core$IPrintWithWriter$_pr_writer$arity$3 = function(this__4002__auto__, writer__4003__auto__, opts__4004__auto__) {
@@ -28090,10 +28090,10 @@ yantra.datatypes.Line.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(this_
     return false;
   }
 };
-yantra.datatypes.Line.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9136) {
+yantra.datatypes.Line.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9142) {
   var self__ = this;
   var this__3987__auto____$1 = this;
-  return new yantra.datatypes.Line(self__.points, G__9136, self__.__extmap, self__.__hash);
+  return new yantra.datatypes.Line(self__.points, G__9142, self__.__extmap, self__.__hash);
 };
 yantra.datatypes.Line.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__3986__auto__) {
   var self__ = this;
@@ -28119,8 +28119,8 @@ yantra.datatypes.Line.cljs$lang$ctorPrWriter = function(this__4022__auto__, writ
 yantra.datatypes.__GT_Line = function __GT_Line(points) {
   return new yantra.datatypes.Line(points);
 };
-yantra.datatypes.map__GT_Line = function map__GT_Line(G__9138) {
-  return new yantra.datatypes.Line((new cljs.core.Keyword(null, "points", "points", 4326117461)).cljs$core$IFn$_invoke$arity$1(G__9138), null, cljs.core.dissoc.call(null, G__9138, new cljs.core.Keyword(null, "points", "points", 4326117461)));
+yantra.datatypes.map__GT_Line = function map__GT_Line(G__9144) {
+  return new yantra.datatypes.Line((new cljs.core.Keyword(null, "points", "points", 4326117461)).cljs$core$IFn$_invoke$arity$1(G__9144), null, cljs.core.dissoc.call(null, G__9144, new cljs.core.Keyword(null, "points", "points", 4326117461)));
 };
 yantra.datatypes.Disk = function(point, radius, __meta, __extmap) {
   this.point = point;
@@ -28154,35 +28154,35 @@ yantra.datatypes.Disk.prototype.cljs$core$ILookup$_lookup$arity$2 = function(thi
   var this__3988__auto____$1 = this;
   return cljs.core._lookup.call(null, this__3988__auto____$1, k__3989__auto__, null);
 };
-yantra.datatypes.Disk.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9143, else__3991__auto__) {
+yantra.datatypes.Disk.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9149, else__3991__auto__) {
   var self__ = this;
   var this__3990__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k9143, new cljs.core.Keyword(null, "point", "point", 1120749826))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k9149, new cljs.core.Keyword(null, "point", "point", 1120749826))) {
     return self__.point;
   } else {
-    if (cljs.core.keyword_identical_QMARK_.call(null, k9143, new cljs.core.Keyword(null, "radius", "radius", 4370292740))) {
+    if (cljs.core.keyword_identical_QMARK_.call(null, k9149, new cljs.core.Keyword(null, "radius", "radius", 4370292740))) {
       return self__.radius;
     } else {
       if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-        return cljs.core.get.call(null, self__.__extmap, k9143, else__3991__auto__);
+        return cljs.core.get.call(null, self__.__extmap, k9149, else__3991__auto__);
       } else {
         return null;
       }
     }
   }
 };
-yantra.datatypes.Disk.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9142) {
+yantra.datatypes.Disk.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9148) {
   var self__ = this;
   var this__3995__auto____$1 = this;
-  var pred__9145 = cljs.core.keyword_identical_QMARK_;
-  var expr__9146 = k__3996__auto__;
-  if (cljs.core.truth_(pred__9145.call(null, new cljs.core.Keyword(null, "point", "point", 1120749826), expr__9146))) {
-    return new yantra.datatypes.Disk(G__9142, self__.radius, self__.__meta, self__.__extmap, null);
+  var pred__9151 = cljs.core.keyword_identical_QMARK_;
+  var expr__9152 = k__3996__auto__;
+  if (cljs.core.truth_(pred__9151.call(null, new cljs.core.Keyword(null, "point", "point", 1120749826), expr__9152))) {
+    return new yantra.datatypes.Disk(G__9148, self__.radius, self__.__meta, self__.__extmap, null);
   } else {
-    if (cljs.core.truth_(pred__9145.call(null, new cljs.core.Keyword(null, "radius", "radius", 4370292740), expr__9146))) {
-      return new yantra.datatypes.Disk(self__.point, G__9142, self__.__meta, self__.__extmap, null);
+    if (cljs.core.truth_(pred__9151.call(null, new cljs.core.Keyword(null, "radius", "radius", 4370292740), expr__9152))) {
+      return new yantra.datatypes.Disk(self__.point, G__9148, self__.__meta, self__.__extmap, null);
     } else {
-      return new yantra.datatypes.Disk(self__.point, self__.radius, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9142), null);
+      return new yantra.datatypes.Disk(self__.point, self__.radius, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9148), null);
     }
   }
 };
@@ -28230,10 +28230,10 @@ yantra.datatypes.Disk.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(this_
     return false;
   }
 };
-yantra.datatypes.Disk.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9142) {
+yantra.datatypes.Disk.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9148) {
   var self__ = this;
   var this__3987__auto____$1 = this;
-  return new yantra.datatypes.Disk(self__.point, self__.radius, G__9142, self__.__extmap, self__.__hash);
+  return new yantra.datatypes.Disk(self__.point, self__.radius, G__9148, self__.__extmap, self__.__hash);
 };
 yantra.datatypes.Disk.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__3986__auto__) {
   var self__ = this;
@@ -28259,8 +28259,8 @@ yantra.datatypes.Disk.cljs$lang$ctorPrWriter = function(this__4022__auto__, writ
 yantra.datatypes.__GT_Disk = function __GT_Disk(point, radius) {
   return new yantra.datatypes.Disk(point, radius);
 };
-yantra.datatypes.map__GT_Disk = function map__GT_Disk(G__9144) {
-  return new yantra.datatypes.Disk((new cljs.core.Keyword(null, "point", "point", 1120749826)).cljs$core$IFn$_invoke$arity$1(G__9144), (new cljs.core.Keyword(null, "radius", "radius", 4370292740)).cljs$core$IFn$_invoke$arity$1(G__9144), null, cljs.core.dissoc.call(null, G__9144, new cljs.core.Keyword(null, "point", "point", 1120749826), new cljs.core.Keyword(null, "radius", "radius", 4370292740)));
+yantra.datatypes.map__GT_Disk = function map__GT_Disk(G__9150) {
+  return new yantra.datatypes.Disk((new cljs.core.Keyword(null, "point", "point", 1120749826)).cljs$core$IFn$_invoke$arity$1(G__9150), (new cljs.core.Keyword(null, "radius", "radius", 4370292740)).cljs$core$IFn$_invoke$arity$1(G__9150), null, cljs.core.dissoc.call(null, G__9150, new cljs.core.Keyword(null, "point", "point", 1120749826), new cljs.core.Keyword(null, "radius", "radius", 4370292740)));
 };
 yantra.datatypes.Rectangle = function(p1, p2, __meta, __extmap) {
   this.p1 = p1;
@@ -28294,35 +28294,35 @@ yantra.datatypes.Rectangle.prototype.cljs$core$ILookup$_lookup$arity$2 = functio
   var this__3988__auto____$1 = this;
   return cljs.core._lookup.call(null, this__3988__auto____$1, k__3989__auto__, null);
 };
-yantra.datatypes.Rectangle.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9149, else__3991__auto__) {
+yantra.datatypes.Rectangle.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9155, else__3991__auto__) {
   var self__ = this;
   var this__3990__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k9149, new cljs.core.Keyword(null, "p1", "p1", 1013907763))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k9155, new cljs.core.Keyword(null, "p1", "p1", 1013907763))) {
     return self__.p1;
   } else {
-    if (cljs.core.keyword_identical_QMARK_.call(null, k9149, new cljs.core.Keyword(null, "p2", "p2", 1013907764))) {
+    if (cljs.core.keyword_identical_QMARK_.call(null, k9155, new cljs.core.Keyword(null, "p2", "p2", 1013907764))) {
       return self__.p2;
     } else {
       if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-        return cljs.core.get.call(null, self__.__extmap, k9149, else__3991__auto__);
+        return cljs.core.get.call(null, self__.__extmap, k9155, else__3991__auto__);
       } else {
         return null;
       }
     }
   }
 };
-yantra.datatypes.Rectangle.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9148) {
+yantra.datatypes.Rectangle.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9154) {
   var self__ = this;
   var this__3995__auto____$1 = this;
-  var pred__9151 = cljs.core.keyword_identical_QMARK_;
-  var expr__9152 = k__3996__auto__;
-  if (cljs.core.truth_(pred__9151.call(null, new cljs.core.Keyword(null, "p1", "p1", 1013907763), expr__9152))) {
-    return new yantra.datatypes.Rectangle(G__9148, self__.p2, self__.__meta, self__.__extmap, null);
+  var pred__9157 = cljs.core.keyword_identical_QMARK_;
+  var expr__9158 = k__3996__auto__;
+  if (cljs.core.truth_(pred__9157.call(null, new cljs.core.Keyword(null, "p1", "p1", 1013907763), expr__9158))) {
+    return new yantra.datatypes.Rectangle(G__9154, self__.p2, self__.__meta, self__.__extmap, null);
   } else {
-    if (cljs.core.truth_(pred__9151.call(null, new cljs.core.Keyword(null, "p2", "p2", 1013907764), expr__9152))) {
-      return new yantra.datatypes.Rectangle(self__.p1, G__9148, self__.__meta, self__.__extmap, null);
+    if (cljs.core.truth_(pred__9157.call(null, new cljs.core.Keyword(null, "p2", "p2", 1013907764), expr__9158))) {
+      return new yantra.datatypes.Rectangle(self__.p1, G__9154, self__.__meta, self__.__extmap, null);
     } else {
-      return new yantra.datatypes.Rectangle(self__.p1, self__.p2, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9148), null);
+      return new yantra.datatypes.Rectangle(self__.p1, self__.p2, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9154), null);
     }
   }
 };
@@ -28370,10 +28370,10 @@ yantra.datatypes.Rectangle.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(
     return false;
   }
 };
-yantra.datatypes.Rectangle.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9148) {
+yantra.datatypes.Rectangle.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9154) {
   var self__ = this;
   var this__3987__auto____$1 = this;
-  return new yantra.datatypes.Rectangle(self__.p1, self__.p2, G__9148, self__.__extmap, self__.__hash);
+  return new yantra.datatypes.Rectangle(self__.p1, self__.p2, G__9154, self__.__extmap, self__.__hash);
 };
 yantra.datatypes.Rectangle.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__3986__auto__) {
   var self__ = this;
@@ -28399,8 +28399,8 @@ yantra.datatypes.Rectangle.cljs$lang$ctorPrWriter = function(this__4022__auto__,
 yantra.datatypes.__GT_Rectangle = function __GT_Rectangle(p1, p2) {
   return new yantra.datatypes.Rectangle(p1, p2);
 };
-yantra.datatypes.map__GT_Rectangle = function map__GT_Rectangle(G__9150) {
-  return new yantra.datatypes.Rectangle((new cljs.core.Keyword(null, "p1", "p1", 1013907763)).cljs$core$IFn$_invoke$arity$1(G__9150), (new cljs.core.Keyword(null, "p2", "p2", 1013907764)).cljs$core$IFn$_invoke$arity$1(G__9150), null, cljs.core.dissoc.call(null, G__9150, new cljs.core.Keyword(null, "p1", "p1", 1013907763), new cljs.core.Keyword(null, "p2", "p2", 1013907764)));
+yantra.datatypes.map__GT_Rectangle = function map__GT_Rectangle(G__9156) {
+  return new yantra.datatypes.Rectangle((new cljs.core.Keyword(null, "p1", "p1", 1013907763)).cljs$core$IFn$_invoke$arity$1(G__9156), (new cljs.core.Keyword(null, "p2", "p2", 1013907764)).cljs$core$IFn$_invoke$arity$1(G__9156), null, cljs.core.dissoc.call(null, G__9156, new cljs.core.Keyword(null, "p1", "p1", 1013907763), new cljs.core.Keyword(null, "p2", "p2", 1013907764)));
 };
 yantra.datatypes.Style = function(style, prims, __meta, __extmap) {
   this.style = style;
@@ -28434,35 +28434,35 @@ yantra.datatypes.Style.prototype.cljs$core$ILookup$_lookup$arity$2 = function(th
   var this__3988__auto____$1 = this;
   return cljs.core._lookup.call(null, this__3988__auto____$1, k__3989__auto__, null);
 };
-yantra.datatypes.Style.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9155, else__3991__auto__) {
+yantra.datatypes.Style.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9161, else__3991__auto__) {
   var self__ = this;
   var this__3990__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k9155, new cljs.core.Keyword(null, "style", "style", 1123684643))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k9161, new cljs.core.Keyword(null, "style", "style", 1123684643))) {
     return self__.style;
   } else {
-    if (cljs.core.keyword_identical_QMARK_.call(null, k9155, new cljs.core.Keyword(null, "prims", "prims", 1120839167))) {
+    if (cljs.core.keyword_identical_QMARK_.call(null, k9161, new cljs.core.Keyword(null, "prims", "prims", 1120839167))) {
       return self__.prims;
     } else {
       if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-        return cljs.core.get.call(null, self__.__extmap, k9155, else__3991__auto__);
+        return cljs.core.get.call(null, self__.__extmap, k9161, else__3991__auto__);
       } else {
         return null;
       }
     }
   }
 };
-yantra.datatypes.Style.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9154) {
+yantra.datatypes.Style.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9160) {
   var self__ = this;
   var this__3995__auto____$1 = this;
-  var pred__9157 = cljs.core.keyword_identical_QMARK_;
-  var expr__9158 = k__3996__auto__;
-  if (cljs.core.truth_(pred__9157.call(null, new cljs.core.Keyword(null, "style", "style", 1123684643), expr__9158))) {
-    return new yantra.datatypes.Style(G__9154, self__.prims, self__.__meta, self__.__extmap, null);
+  var pred__9163 = cljs.core.keyword_identical_QMARK_;
+  var expr__9164 = k__3996__auto__;
+  if (cljs.core.truth_(pred__9163.call(null, new cljs.core.Keyword(null, "style", "style", 1123684643), expr__9164))) {
+    return new yantra.datatypes.Style(G__9160, self__.prims, self__.__meta, self__.__extmap, null);
   } else {
-    if (cljs.core.truth_(pred__9157.call(null, new cljs.core.Keyword(null, "prims", "prims", 1120839167), expr__9158))) {
-      return new yantra.datatypes.Style(self__.style, G__9154, self__.__meta, self__.__extmap, null);
+    if (cljs.core.truth_(pred__9163.call(null, new cljs.core.Keyword(null, "prims", "prims", 1120839167), expr__9164))) {
+      return new yantra.datatypes.Style(self__.style, G__9160, self__.__meta, self__.__extmap, null);
     } else {
-      return new yantra.datatypes.Style(self__.style, self__.prims, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9154), null);
+      return new yantra.datatypes.Style(self__.style, self__.prims, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9160), null);
     }
   }
 };
@@ -28510,10 +28510,10 @@ yantra.datatypes.Style.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(this
     return false;
   }
 };
-yantra.datatypes.Style.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9154) {
+yantra.datatypes.Style.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9160) {
   var self__ = this;
   var this__3987__auto____$1 = this;
-  return new yantra.datatypes.Style(self__.style, self__.prims, G__9154, self__.__extmap, self__.__hash);
+  return new yantra.datatypes.Style(self__.style, self__.prims, G__9160, self__.__extmap, self__.__hash);
 };
 yantra.datatypes.Style.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__3986__auto__) {
   var self__ = this;
@@ -28539,8 +28539,8 @@ yantra.datatypes.Style.cljs$lang$ctorPrWriter = function(this__4022__auto__, wri
 yantra.datatypes.__GT_Style = function __GT_Style(style, prims) {
   return new yantra.datatypes.Style(style, prims);
 };
-yantra.datatypes.map__GT_Style = function map__GT_Style(G__9156) {
-  return new yantra.datatypes.Style((new cljs.core.Keyword(null, "style", "style", 1123684643)).cljs$core$IFn$_invoke$arity$1(G__9156), (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(G__9156), null, cljs.core.dissoc.call(null, G__9156, new cljs.core.Keyword(null, "style", "style", 1123684643), new cljs.core.Keyword(null, "prims", "prims", 1120839167)));
+yantra.datatypes.map__GT_Style = function map__GT_Style(G__9162) {
+  return new yantra.datatypes.Style((new cljs.core.Keyword(null, "style", "style", 1123684643)).cljs$core$IFn$_invoke$arity$1(G__9162), (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(G__9162), null, cljs.core.dissoc.call(null, G__9162, new cljs.core.Keyword(null, "style", "style", 1123684643), new cljs.core.Keyword(null, "prims", "prims", 1120839167)));
 };
 yantra.datatypes.ListLinePlot = function(data, opts, __meta, __extmap) {
   this.data = data;
@@ -28574,35 +28574,35 @@ yantra.datatypes.ListLinePlot.prototype.cljs$core$ILookup$_lookup$arity$2 = func
   var this__3988__auto____$1 = this;
   return cljs.core._lookup.call(null, this__3988__auto____$1, k__3989__auto__, null);
 };
-yantra.datatypes.ListLinePlot.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9161, else__3991__auto__) {
+yantra.datatypes.ListLinePlot.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9167, else__3991__auto__) {
   var self__ = this;
   var this__3990__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k9161, new cljs.core.Keyword(null, "data", "data", 1016980252))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k9167, new cljs.core.Keyword(null, "data", "data", 1016980252))) {
     return self__.data;
   } else {
-    if (cljs.core.keyword_identical_QMARK_.call(null, k9161, new cljs.core.Keyword(null, "opts", "opts", 1017322386))) {
+    if (cljs.core.keyword_identical_QMARK_.call(null, k9167, new cljs.core.Keyword(null, "opts", "opts", 1017322386))) {
       return self__.opts;
     } else {
       if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-        return cljs.core.get.call(null, self__.__extmap, k9161, else__3991__auto__);
+        return cljs.core.get.call(null, self__.__extmap, k9167, else__3991__auto__);
       } else {
         return null;
       }
     }
   }
 };
-yantra.datatypes.ListLinePlot.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9160) {
+yantra.datatypes.ListLinePlot.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9166) {
   var self__ = this;
   var this__3995__auto____$1 = this;
-  var pred__9163 = cljs.core.keyword_identical_QMARK_;
-  var expr__9164 = k__3996__auto__;
-  if (cljs.core.truth_(pred__9163.call(null, new cljs.core.Keyword(null, "data", "data", 1016980252), expr__9164))) {
-    return new yantra.datatypes.ListLinePlot(G__9160, self__.opts, self__.__meta, self__.__extmap, null);
+  var pred__9169 = cljs.core.keyword_identical_QMARK_;
+  var expr__9170 = k__3996__auto__;
+  if (cljs.core.truth_(pred__9169.call(null, new cljs.core.Keyword(null, "data", "data", 1016980252), expr__9170))) {
+    return new yantra.datatypes.ListLinePlot(G__9166, self__.opts, self__.__meta, self__.__extmap, null);
   } else {
-    if (cljs.core.truth_(pred__9163.call(null, new cljs.core.Keyword(null, "opts", "opts", 1017322386), expr__9164))) {
-      return new yantra.datatypes.ListLinePlot(self__.data, G__9160, self__.__meta, self__.__extmap, null);
+    if (cljs.core.truth_(pred__9169.call(null, new cljs.core.Keyword(null, "opts", "opts", 1017322386), expr__9170))) {
+      return new yantra.datatypes.ListLinePlot(self__.data, G__9166, self__.__meta, self__.__extmap, null);
     } else {
-      return new yantra.datatypes.ListLinePlot(self__.data, self__.opts, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9160), null);
+      return new yantra.datatypes.ListLinePlot(self__.data, self__.opts, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9166), null);
     }
   }
 };
@@ -28650,10 +28650,10 @@ yantra.datatypes.ListLinePlot.prototype.cljs$core$IEquiv$_equiv$arity$2 = functi
     return false;
   }
 };
-yantra.datatypes.ListLinePlot.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9160) {
+yantra.datatypes.ListLinePlot.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9166) {
   var self__ = this;
   var this__3987__auto____$1 = this;
-  return new yantra.datatypes.ListLinePlot(self__.data, self__.opts, G__9160, self__.__extmap, self__.__hash);
+  return new yantra.datatypes.ListLinePlot(self__.data, self__.opts, G__9166, self__.__extmap, self__.__hash);
 };
 yantra.datatypes.ListLinePlot.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__3986__auto__) {
   var self__ = this;
@@ -28679,8 +28679,8 @@ yantra.datatypes.ListLinePlot.cljs$lang$ctorPrWriter = function(this__4022__auto
 yantra.datatypes.__GT_ListLinePlot = function __GT_ListLinePlot(data, opts) {
   return new yantra.datatypes.ListLinePlot(data, opts);
 };
-yantra.datatypes.map__GT_ListLinePlot = function map__GT_ListLinePlot(G__9162) {
-  return new yantra.datatypes.ListLinePlot((new cljs.core.Keyword(null, "data", "data", 1016980252)).cljs$core$IFn$_invoke$arity$1(G__9162), (new cljs.core.Keyword(null, "opts", "opts", 1017322386)).cljs$core$IFn$_invoke$arity$1(G__9162), null, cljs.core.dissoc.call(null, G__9162, new cljs.core.Keyword(null, "data", "data", 1016980252), new cljs.core.Keyword(null, "opts", "opts", 1017322386)));
+yantra.datatypes.map__GT_ListLinePlot = function map__GT_ListLinePlot(G__9168) {
+  return new yantra.datatypes.ListLinePlot((new cljs.core.Keyword(null, "data", "data", 1016980252)).cljs$core$IFn$_invoke$arity$1(G__9168), (new cljs.core.Keyword(null, "opts", "opts", 1017322386)).cljs$core$IFn$_invoke$arity$1(G__9168), null, cljs.core.dissoc.call(null, G__9168, new cljs.core.Keyword(null, "data", "data", 1016980252), new cljs.core.Keyword(null, "opts", "opts", 1017322386)));
 };
 yantra.datatypes.BarChart = function(data, opts, __meta, __extmap) {
   this.data = data;
@@ -28714,35 +28714,35 @@ yantra.datatypes.BarChart.prototype.cljs$core$ILookup$_lookup$arity$2 = function
   var this__3988__auto____$1 = this;
   return cljs.core._lookup.call(null, this__3988__auto____$1, k__3989__auto__, null);
 };
-yantra.datatypes.BarChart.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9167, else__3991__auto__) {
+yantra.datatypes.BarChart.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9173, else__3991__auto__) {
   var self__ = this;
   var this__3990__auto____$1 = this;
-  if (cljs.core.keyword_identical_QMARK_.call(null, k9167, new cljs.core.Keyword(null, "data", "data", 1016980252))) {
+  if (cljs.core.keyword_identical_QMARK_.call(null, k9173, new cljs.core.Keyword(null, "data", "data", 1016980252))) {
     return self__.data;
   } else {
-    if (cljs.core.keyword_identical_QMARK_.call(null, k9167, new cljs.core.Keyword(null, "opts", "opts", 1017322386))) {
+    if (cljs.core.keyword_identical_QMARK_.call(null, k9173, new cljs.core.Keyword(null, "opts", "opts", 1017322386))) {
       return self__.opts;
     } else {
       if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
-        return cljs.core.get.call(null, self__.__extmap, k9167, else__3991__auto__);
+        return cljs.core.get.call(null, self__.__extmap, k9173, else__3991__auto__);
       } else {
         return null;
       }
     }
   }
 };
-yantra.datatypes.BarChart.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9166) {
+yantra.datatypes.BarChart.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9172) {
   var self__ = this;
   var this__3995__auto____$1 = this;
-  var pred__9169 = cljs.core.keyword_identical_QMARK_;
-  var expr__9170 = k__3996__auto__;
-  if (cljs.core.truth_(pred__9169.call(null, new cljs.core.Keyword(null, "data", "data", 1016980252), expr__9170))) {
-    return new yantra.datatypes.BarChart(G__9166, self__.opts, self__.__meta, self__.__extmap, null);
+  var pred__9175 = cljs.core.keyword_identical_QMARK_;
+  var expr__9176 = k__3996__auto__;
+  if (cljs.core.truth_(pred__9175.call(null, new cljs.core.Keyword(null, "data", "data", 1016980252), expr__9176))) {
+    return new yantra.datatypes.BarChart(G__9172, self__.opts, self__.__meta, self__.__extmap, null);
   } else {
-    if (cljs.core.truth_(pred__9169.call(null, new cljs.core.Keyword(null, "opts", "opts", 1017322386), expr__9170))) {
-      return new yantra.datatypes.BarChart(self__.data, G__9166, self__.__meta, self__.__extmap, null);
+    if (cljs.core.truth_(pred__9175.call(null, new cljs.core.Keyword(null, "opts", "opts", 1017322386), expr__9176))) {
+      return new yantra.datatypes.BarChart(self__.data, G__9172, self__.__meta, self__.__extmap, null);
     } else {
-      return new yantra.datatypes.BarChart(self__.data, self__.opts, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9166), null);
+      return new yantra.datatypes.BarChart(self__.data, self__.opts, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9172), null);
     }
   }
 };
@@ -28790,10 +28790,10 @@ yantra.datatypes.BarChart.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(t
     return false;
   }
 };
-yantra.datatypes.BarChart.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9166) {
+yantra.datatypes.BarChart.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9172) {
   var self__ = this;
   var this__3987__auto____$1 = this;
-  return new yantra.datatypes.BarChart(self__.data, self__.opts, G__9166, self__.__extmap, self__.__hash);
+  return new yantra.datatypes.BarChart(self__.data, self__.opts, G__9172, self__.__extmap, self__.__hash);
 };
 yantra.datatypes.BarChart.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__3986__auto__) {
   var self__ = this;
@@ -28819,8 +28819,159 @@ yantra.datatypes.BarChart.cljs$lang$ctorPrWriter = function(this__4022__auto__, 
 yantra.datatypes.__GT_BarChart = function __GT_BarChart(data, opts) {
   return new yantra.datatypes.BarChart(data, opts);
 };
-yantra.datatypes.map__GT_BarChart = function map__GT_BarChart(G__9168) {
-  return new yantra.datatypes.BarChart((new cljs.core.Keyword(null, "data", "data", 1016980252)).cljs$core$IFn$_invoke$arity$1(G__9168), (new cljs.core.Keyword(null, "opts", "opts", 1017322386)).cljs$core$IFn$_invoke$arity$1(G__9168), null, cljs.core.dissoc.call(null, G__9168, new cljs.core.Keyword(null, "data", "data", 1016980252), new cljs.core.Keyword(null, "opts", "opts", 1017322386)));
+yantra.datatypes.map__GT_BarChart = function map__GT_BarChart(G__9174) {
+  return new yantra.datatypes.BarChart((new cljs.core.Keyword(null, "data", "data", 1016980252)).cljs$core$IFn$_invoke$arity$1(G__9174), (new cljs.core.Keyword(null, "opts", "opts", 1017322386)).cljs$core$IFn$_invoke$arity$1(G__9174), null, cljs.core.dissoc.call(null, G__9174, new cljs.core.Keyword(null, "data", "data", 1016980252), new cljs.core.Keyword(null, "opts", "opts", 1017322386)));
+};
+yantra.datatypes.HTMLElement = function(tag, attributes, children, __meta, __extmap) {
+  this.tag = tag;
+  this.attributes = attributes;
+  this.children = children;
+  this.__meta = __meta;
+  this.__extmap = __extmap;
+  this.cljs$lang$protocol_mask$partition1$ = 0;
+  this.cljs$lang$protocol_mask$partition0$ = 2229667594;
+  if (arguments.length > 3) {
+    this.__meta = __meta;
+    this.__extmap = __extmap;
+  } else {
+    this.__meta = null;
+    this.__extmap = null;
+  }
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$IHash$_hash$arity$1 = function(this__3983__auto__) {
+  var self__ = this;
+  var this__3983__auto____$1 = this;
+  var h__3819__auto__ = self__.__hash;
+  if (!(h__3819__auto__ == null)) {
+    return h__3819__auto__;
+  } else {
+    var h__3819__auto____$1 = cljs.core.hash_imap.call(null, this__3983__auto____$1);
+    self__.__hash = h__3819__auto____$1;
+    return h__3819__auto____$1;
+  }
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$ILookup$_lookup$arity$2 = function(this__3988__auto__, k__3989__auto__) {
+  var self__ = this;
+  var this__3988__auto____$1 = this;
+  return cljs.core._lookup.call(null, this__3988__auto____$1, k__3989__auto__, null);
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$ILookup$_lookup$arity$3 = function(this__3990__auto__, k9179, else__3991__auto__) {
+  var self__ = this;
+  var this__3990__auto____$1 = this;
+  if (cljs.core.keyword_identical_QMARK_.call(null, k9179, new cljs.core.Keyword(null, "tag", "tag", 1014018828))) {
+    return self__.tag;
+  } else {
+    if (cljs.core.keyword_identical_QMARK_.call(null, k9179, new cljs.core.Keyword(null, "attributes", "attributes", 1419549897))) {
+      return self__.attributes;
+    } else {
+      if (cljs.core.keyword_identical_QMARK_.call(null, k9179, new cljs.core.Keyword(null, "children", "children", 2673430897))) {
+        return self__.children;
+      } else {
+        if (new cljs.core.Keyword(null, "else", "else", 1017020587)) {
+          return cljs.core.get.call(null, self__.__extmap, k9179, else__3991__auto__);
+        } else {
+          return null;
+        }
+      }
+    }
+  }
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$IAssociative$_assoc$arity$3 = function(this__3995__auto__, k__3996__auto__, G__9178) {
+  var self__ = this;
+  var this__3995__auto____$1 = this;
+  var pred__9181 = cljs.core.keyword_identical_QMARK_;
+  var expr__9182 = k__3996__auto__;
+  if (cljs.core.truth_(pred__9181.call(null, new cljs.core.Keyword(null, "tag", "tag", 1014018828), expr__9182))) {
+    return new yantra.datatypes.HTMLElement(G__9178, self__.attributes, self__.children, self__.__meta, self__.__extmap, null);
+  } else {
+    if (cljs.core.truth_(pred__9181.call(null, new cljs.core.Keyword(null, "attributes", "attributes", 1419549897), expr__9182))) {
+      return new yantra.datatypes.HTMLElement(self__.tag, G__9178, self__.children, self__.__meta, self__.__extmap, null);
+    } else {
+      if (cljs.core.truth_(pred__9181.call(null, new cljs.core.Keyword(null, "children", "children", 2673430897), expr__9182))) {
+        return new yantra.datatypes.HTMLElement(self__.tag, self__.attributes, G__9178, self__.__meta, self__.__extmap, null);
+      } else {
+        return new yantra.datatypes.HTMLElement(self__.tag, self__.attributes, self__.children, self__.__meta, cljs.core.assoc.call(null, self__.__extmap, k__3996__auto__, G__9178), null);
+      }
+    }
+  }
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$IPrintWithWriter$_pr_writer$arity$3 = function(this__4002__auto__, writer__4003__auto__, opts__4004__auto__) {
+  var self__ = this;
+  var this__4002__auto____$1 = this;
+  var pr_pair__4005__auto__ = function(keyval__4006__auto__) {
+    return cljs.core.pr_sequential_writer.call(null, writer__4003__auto__, cljs.core.pr_writer, "", " ", "", opts__4004__auto__, keyval__4006__auto__);
+  };
+  return cljs.core.pr_sequential_writer.call(null, writer__4003__auto__, pr_pair__4005__auto__, "#yantra.datatypes.HTMLElement{", ", ", "}", opts__4004__auto__, cljs.core.concat.call(null, new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "tag", "tag", 1014018828), self__.tag], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+  [new cljs.core.Keyword(null, "attributes", "attributes", 1419549897), self__.attributes], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "children", "children", 2673430897), self__.children], null)], null), self__.__extmap));
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$ICollection$_conj$arity$2 = function(this__3993__auto__, entry__3994__auto__) {
+  var self__ = this;
+  var this__3993__auto____$1 = this;
+  if (cljs.core.vector_QMARK_.call(null, entry__3994__auto__)) {
+    return cljs.core._assoc.call(null, this__3993__auto____$1, cljs.core._nth.call(null, entry__3994__auto__, 0), cljs.core._nth.call(null, entry__3994__auto__, 1));
+  } else {
+    return cljs.core.reduce.call(null, cljs.core._conj, this__3993__auto____$1, entry__3994__auto__);
+  }
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$ISeqable$_seq$arity$1 = function(this__4000__auto__) {
+  var self__ = this;
+  var this__4000__auto____$1 = this;
+  return cljs.core.seq.call(null, cljs.core.concat.call(null, new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "tag", "tag", 1014018828), self__.tag], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "attributes", "attributes", 1419549897), self__.attributes], null), new cljs.core.PersistentVector(null, 
+  2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null, "children", "children", 2673430897), self__.children], null)], null), self__.__extmap));
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$ICounted$_count$arity$1 = function(this__3992__auto__) {
+  var self__ = this;
+  var this__3992__auto____$1 = this;
+  return 3 + cljs.core.count.call(null, self__.__extmap);
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$IEquiv$_equiv$arity$2 = function(this__3984__auto__, other__3985__auto__) {
+  var self__ = this;
+  var this__3984__auto____$1 = this;
+  if (cljs.core.truth_(function() {
+    var and__3396__auto__ = other__3985__auto__;
+    if (cljs.core.truth_(and__3396__auto__)) {
+      return this__3984__auto____$1.constructor === other__3985__auto__.constructor && cljs.core.equiv_map.call(null, this__3984__auto____$1, other__3985__auto__);
+    } else {
+      return and__3396__auto__;
+    }
+  }())) {
+    return true;
+  } else {
+    return false;
+  }
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(this__3987__auto__, G__9178) {
+  var self__ = this;
+  var this__3987__auto____$1 = this;
+  return new yantra.datatypes.HTMLElement(self__.tag, self__.attributes, self__.children, G__9178, self__.__extmap, self__.__hash);
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$IMeta$_meta$arity$1 = function(this__3986__auto__) {
+  var self__ = this;
+  var this__3986__auto____$1 = this;
+  return self__.__meta;
+};
+yantra.datatypes.HTMLElement.prototype.cljs$core$IMap$_dissoc$arity$2 = function(this__3997__auto__, k__3998__auto__) {
+  var self__ = this;
+  var this__3997__auto____$1 = this;
+  if (cljs.core.contains_QMARK_.call(null, new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "children", "children", 2673430897), null, new cljs.core.Keyword(null, "attributes", "attributes", 1419549897), null, new cljs.core.Keyword(null, "tag", "tag", 1014018828), null], null), null), k__3998__auto__)) {
+    return cljs.core.dissoc.call(null, cljs.core.with_meta.call(null, cljs.core.into.call(null, cljs.core.PersistentArrayMap.EMPTY, this__3997__auto____$1), self__.__meta), k__3998__auto__);
+  } else {
+    return new yantra.datatypes.HTMLElement(self__.tag, self__.attributes, self__.children, self__.__meta, cljs.core.not_empty.call(null, cljs.core.dissoc.call(null, self__.__extmap, k__3998__auto__)), null);
+  }
+};
+yantra.datatypes.HTMLElement.cljs$lang$type = true;
+yantra.datatypes.HTMLElement.cljs$lang$ctorPrSeq = function(this__4022__auto__) {
+  return cljs.core._conj.call(null, cljs.core.List.EMPTY, "yantra.datatypes/HTMLElement");
+};
+yantra.datatypes.HTMLElement.cljs$lang$ctorPrWriter = function(this__4022__auto__, writer__4023__auto__) {
+  return cljs.core._write.call(null, writer__4023__auto__, "yantra.datatypes/HTMLElement");
+};
+yantra.datatypes.__GT_HTMLElement = function __GT_HTMLElement(tag, attributes, children) {
+  return new yantra.datatypes.HTMLElement(tag, attributes, children);
+};
+yantra.datatypes.map__GT_HTMLElement = function map__GT_HTMLElement(G__9180) {
+  return new yantra.datatypes.HTMLElement((new cljs.core.Keyword(null, "tag", "tag", 1014018828)).cljs$core$IFn$_invoke$arity$1(G__9180), (new cljs.core.Keyword(null, "attributes", "attributes", 1419549897)).cljs$core$IFn$_invoke$arity$1(G__9180), (new cljs.core.Keyword(null, "children", "children", 2673430897)).cljs$core$IFn$_invoke$arity$1(G__9180), null, cljs.core.dissoc.call(null, G__9180, new cljs.core.Keyword(null, "tag", "tag", 1014018828), new cljs.core.Keyword(null, "attributes", "attributes", 
+  1419549897), new cljs.core.Keyword(null, "children", "children", 2673430897)));
 };
 goog.provide("cljs.core.async.impl.protocols");
 goog.require("cljs.core");
@@ -36374,8 +36525,8 @@ goog.require("React");
 goog.require("yantra.datatypes");
 goog.require("yantra.datatypes");
 yantra.graphics.BoundingBox = function() {
-  var obj9207 = {};
-  return obj9207;
+  var obj9221 = {};
+  return obj9221;
 }();
 yantra.graphics.bounding_points = function bounding_points(x) {
   if (function() {
@@ -36404,11 +36555,6 @@ yantra.graphics.bounding_points = function bounding_points(x) {
     }().call(null, x);
   }
 };
-yantra.datatypes.Style.prototype.yantra$graphics$BoundingBox$ = true;
-yantra.datatypes.Style.prototype.yantra$graphics$BoundingBox$bounding_points$arity$1 = function(this$) {
-  var this$__$1 = this;
-  return yantra.graphics.bounding_points.call(null, (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(this$__$1));
-};
 yantra.datatypes.Rectangle.prototype.yantra$graphics$BoundingBox$ = true;
 yantra.datatypes.Rectangle.prototype.yantra$graphics$BoundingBox$bounding_points$arity$1 = function(this$) {
   var this$__$1 = this;
@@ -36434,6 +36580,19 @@ yantra.datatypes.Point.prototype.yantra$graphics$BoundingBox$bounding_points$ari
   var this$__$1 = this;
   return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.Keyword(null, "point", "point", 1120749826)).cljs$core$IFn$_invoke$arity$1(this$__$1)], null);
 };
+yantra.datatypes.Style.prototype.yantra$graphics$BoundingBox$ = true;
+yantra.datatypes.Style.prototype.yantra$graphics$BoundingBox$bounding_points$arity$1 = function(this$) {
+  var this$__$1 = this;
+  return yantra.graphics.bounding_points.call(null, (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(this$__$1));
+};
+yantra.graphics.BoundingBox["_"] = true;
+yantra.graphics.bounding_points["_"] = function(this$) {
+  if (cljs.core.seq_QMARK_.call(null, this$) || cljs.core.vector_QMARK_.call(null, this$)) {
+    return yantra.graphics.bounding_box.call(null, this$);
+  } else {
+    return cljs.core.PersistentVector.EMPTY;
+  }
+};
 yantra.graphics.transpose = function transpose(m) {
   return cljs.core.apply.call(null, cljs.core.mapv, cljs.core.vector, m);
 };
@@ -36449,16 +36608,16 @@ yantra.graphics.bounding_box = function bounding_box(g) {
   }
 };
 yantra.graphics.expand_plot_range = function expand_plot_range(bounding_box, image_size) {
-  var vec__9212 = bounding_box;
-  var vec__9213 = cljs.core.nth.call(null, vec__9212, 0, null);
-  var xmin = cljs.core.nth.call(null, vec__9213, 0, null);
-  var ymin = cljs.core.nth.call(null, vec__9213, 1, null);
-  var vec__9214 = cljs.core.nth.call(null, vec__9212, 1, null);
-  var xmax = cljs.core.nth.call(null, vec__9214, 0, null);
-  var ymax = cljs.core.nth.call(null, vec__9214, 1, null);
-  var vec__9215 = image_size;
-  var image_width = cljs.core.nth.call(null, vec__9215, 0, null);
-  var image_height = cljs.core.nth.call(null, vec__9215, 1, null);
+  var vec__9226 = bounding_box;
+  var vec__9227 = cljs.core.nth.call(null, vec__9226, 0, null);
+  var xmin = cljs.core.nth.call(null, vec__9227, 0, null);
+  var ymin = cljs.core.nth.call(null, vec__9227, 1, null);
+  var vec__9228 = cljs.core.nth.call(null, vec__9226, 1, null);
+  var xmax = cljs.core.nth.call(null, vec__9228, 0, null);
+  var ymax = cljs.core.nth.call(null, vec__9228, 1, null);
+  var vec__9229 = image_size;
+  var image_width = cljs.core.nth.call(null, vec__9229, 0, null);
+  var image_height = cljs.core.nth.call(null, vec__9229, 1, null);
   var width = Math.abs.call(null, xmax - xmin);
   var height = Math.abs.call(null, ymax - ymin);
   var plotaspect = height / width;
@@ -36468,41 +36627,40 @@ yantra.graphics.expand_plot_range = function expand_plot_range(bounding_box, ima
     var heightdiff = (newheight - height) / 2;
     return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [xmin, ymin - heightdiff], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [xmax, ymax + heightdiff], null)], null);
   } else {
-    alert([cljs.core.str("no aspect change"), cljs.core.str(plotaspect), cljs.core.str(" "), cljs.core.str(imageaspect)].join(""));
     return bounding_box;
   }
 };
 yantra.graphics.coordinate_transformer = function coordinate_transformer(bounding_box, image_size) {
-  var vec__9222 = yantra.graphics.expand_plot_range.call(null, bounding_box, image_size);
-  var vec__9223 = cljs.core.nth.call(null, vec__9222, 0, null);
-  var xmin = cljs.core.nth.call(null, vec__9223, 0, null);
-  var ymin = cljs.core.nth.call(null, vec__9223, 1, null);
-  var vec__9224 = cljs.core.nth.call(null, vec__9222, 1, null);
-  var xmax = cljs.core.nth.call(null, vec__9224, 0, null);
-  var ymax = cljs.core.nth.call(null, vec__9224, 1, null);
-  var vec__9225 = image_size;
-  var image_width = cljs.core.nth.call(null, vec__9225, 0, null);
-  var image_height = cljs.core.nth.call(null, vec__9225, 1, null);
+  var vec__9236 = yantra.graphics.expand_plot_range.call(null, bounding_box, image_size);
+  var vec__9237 = cljs.core.nth.call(null, vec__9236, 0, null);
+  var xmin = cljs.core.nth.call(null, vec__9237, 0, null);
+  var ymin = cljs.core.nth.call(null, vec__9237, 1, null);
+  var vec__9238 = cljs.core.nth.call(null, vec__9236, 1, null);
+  var xmax = cljs.core.nth.call(null, vec__9238, 0, null);
+  var ymax = cljs.core.nth.call(null, vec__9238, 1, null);
+  var vec__9239 = image_size;
+  var image_width = cljs.core.nth.call(null, vec__9239, 0, null);
+  var image_height = cljs.core.nth.call(null, vec__9239, 1, null);
   var width = Math.abs.call(null, xmax - xmin);
   var height = Math.abs.call(null, ymax - ymin);
-  return function(p__9226) {
-    var vec__9227 = p__9226;
-    var x = cljs.core.nth.call(null, vec__9227, 0, null);
-    var y = cljs.core.nth.call(null, vec__9227, 1, null);
+  return function(p__9240) {
+    var vec__9241 = p__9240;
+    var x = cljs.core.nth.call(null, vec__9241, 0, null);
+    var y = cljs.core.nth.call(null, vec__9241, 1, null);
     return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x - xmin) * (image_width / width), image_height - (y - ymin) * (image_height / height)], null);
   };
 };
 yantra.graphics.distance_transformer = function distance_transformer(bounding_box, image_size) {
-  var vec__9232 = bounding_box;
-  var vec__9233 = cljs.core.nth.call(null, vec__9232, 0, null);
-  var xmin = cljs.core.nth.call(null, vec__9233, 0, null);
-  var ymin = cljs.core.nth.call(null, vec__9233, 1, null);
-  var vec__9234 = cljs.core.nth.call(null, vec__9232, 1, null);
-  var xmax = cljs.core.nth.call(null, vec__9234, 0, null);
-  var ymax = cljs.core.nth.call(null, vec__9234, 1, null);
-  var vec__9235 = image_size;
-  var image_width = cljs.core.nth.call(null, vec__9235, 0, null);
-  var image_height = cljs.core.nth.call(null, vec__9235, 1, null);
+  var vec__9246 = bounding_box;
+  var vec__9247 = cljs.core.nth.call(null, vec__9246, 0, null);
+  var xmin = cljs.core.nth.call(null, vec__9247, 0, null);
+  var ymin = cljs.core.nth.call(null, vec__9247, 1, null);
+  var vec__9248 = cljs.core.nth.call(null, vec__9246, 1, null);
+  var xmax = cljs.core.nth.call(null, vec__9248, 0, null);
+  var ymax = cljs.core.nth.call(null, vec__9248, 1, null);
+  var vec__9249 = image_size;
+  var image_width = cljs.core.nth.call(null, vec__9249, 0, null);
+  var image_height = cljs.core.nth.call(null, vec__9249, 1, null);
   var width = Math.abs.call(null, xmax - xmin);
   var height = Math.abs.call(null, ymax - ymin);
   return function(d) {
@@ -36510,11 +36668,21 @@ yantra.graphics.distance_transformer = function distance_transformer(bounding_bo
   };
 };
 yantra.graphics.listplot = function listplot(l) {
-  return new yantra.datatypes.Graphics(cljs.core.vec.call(null, cljs.core.map_indexed.call(null, function(p1__9236_SHARP_, p2__9237_SHARP_) {
-    return new yantra.datatypes.Point(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [p1__9236_SHARP_, p2__9237_SHARP_], null));
+  return new yantra.datatypes.Graphics(cljs.core.vec.call(null, cljs.core.map_indexed.call(null, function(p1__9250_SHARP_, p2__9251_SHARP_) {
+    return new yantra.datatypes.Point(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [p1__9250_SHARP_, p2__9251_SHARP_], null));
   }, l)));
 };
-yantra.graphics.graphics_renderers = new cljs.core.PersistentArrayMap.fromArray([yantra.datatypes.Point, function(cursor, owner, opts) {
+yantra.graphics.graphics_renderers = new cljs.core.PersistentArrayMap.fromArray([yantra.datatypes.Style, function(cursor, owner, opts) {
+  var e = om.core.value.call(null, cursor);
+  var coordfn = (new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122)).cljs$core$IFn$_invoke$arity$1(opts);
+  var distancefn = (new cljs.core.Keyword(null, "distance-fn", "distance-fn", 4584217874)).cljs$core$IFn$_invoke$arity$1(opts);
+  var builder = om.core.get_shared.call(null, owner, new cljs.core.Keyword(null, "builder", "builder", 1244848909));
+  return React.DOM.g(cljs.core.clj__GT_js.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "style", "style", 1123684643), (new cljs.core.Keyword(null, "style", "style", 1123684643)).cljs$core$IFn$_invoke$arity$1(e)], null)), cljs.core.seq_QMARK_.call(null, (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(e)) || cljs.core.vector_QMARK_.call(null, (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(e)) ? 
+  cljs.core.into_array.call(null, cljs.core.map.call(null, function(p1__9252_SHARP_) {
+    return builder.call(null, p1__9252_SHARP_, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "opts", "opts", 1017322386), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122), coordfn, new cljs.core.Keyword(null, "distance-fn", "distance-fn", 4584217874), distancefn], null)], null));
+  }, (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(cursor))) : builder.call(null, (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(cursor), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "opts", "opts", 1017322386), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122), coordfn, new cljs.core.Keyword(null, "distance-fn", "distance-fn", 4584217874), 
+  distancefn], null)], null)));
+}, yantra.datatypes.Point, function(cursor, owner, opts) {
   var p2 = (new cljs.core.Keyword(null, "point", "point", 1120749826)).cljs$core$IFn$_invoke$arity$1(om.core.value.call(null, cursor));
   return React.DOM.circle(new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null, "cx", "cx", 1013907431), cljs.core.first.call(null, p2), new cljs.core.Keyword(null, "cy", "cy", 1013907432), cljs.core.last.call(null, p2), new cljs.core.Keyword(null, "r", "r", 1013904356), "3"], null));
 }, yantra.datatypes.Disk, function(cursor, owner, opts) {
@@ -36528,8 +36696,8 @@ yantra.graphics.graphics_renderers = new cljs.core.PersistentArrayMap.fromArray(
   var bb = yantra.graphics.bounding_box.call(null, (new cljs.core.Keyword(null, "contents", "contents", 4741549708)).cljs$core$IFn$_invoke$arity$1(om.core.value.call(null, cursor)));
   var coordfn = yantra.graphics.coordinate_transformer.call(null, bb, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [200, 200], null));
   var distancefn = yantra.graphics.distance_transformer.call(null, bb, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [200, 200], null));
-  return React.DOM.svg({"height":200, "width":200}, cljs.core.into_array.call(null, cljs.core.map.call(null, function(p1__9238_SHARP_) {
-    return builder.call(null, p1__9238_SHARP_, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "opts", "opts", 1017322386), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122), coordfn, new cljs.core.Keyword(null, "distance-fn", "distance-fn", 4584217874), distancefn], null)], null));
+  return React.DOM.svg({"height":200, "width":200}, cljs.core.into_array.call(null, cljs.core.map.call(null, function(p1__9253_SHARP_) {
+    return builder.call(null, p1__9253_SHARP_, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "opts", "opts", 1017322386), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122), coordfn, new cljs.core.Keyword(null, "distance-fn", "distance-fn", 4584217874), distancefn], null)], null));
   }, (new cljs.core.Keyword(null, "contents", "contents", 4741549708)).cljs$core$IFn$_invoke$arity$1(cursor))));
 }], true, false);
 goog.provide("yantra.edn");
@@ -36731,13 +36899,13 @@ yantra.edn.extend_sequential_cursor = function extend_sequential_cursor(type) {
 };
 cljs.core.map.call(null, yantra.edn.extend_sequential_cursor, cljs.core.PersistentHashSet.fromArray([cljs.core.KeySeq, cljs.core.IndexedSeq, cljs.core.ChunkedCons, cljs.core.LazySeq, cljs.core.RSeq, cljs.core.NodeSeq, cljs.core.List, cljs.core.PersistentArrayMapSeq, cljs.core.EmptyList, cljs.core.Cons, cljs.core.Range, cljs.core.ArrayNodeSeq, cljs.core.ValSeq, cljs.core.PersistentTreeMapSeq], true));
 yantra.edn.thread_sets = function thread_sets(x) {
-  return cljs.core.reduce.call(null, function(m, p__9364) {
-    var vec__9365 = p__9364;
-    var k = cljs.core.nth.call(null, vec__9365, 0, null);
-    var v = cljs.core.nth.call(null, vec__9365, 1, null);
+  return cljs.core.reduce.call(null, function(m, p__9371) {
+    var vec__9372 = p__9371;
+    var k = cljs.core.nth.call(null, vec__9372, 0, null);
+    var v = cljs.core.nth.call(null, vec__9372, 1, null);
     if (cljs.core.set_QMARK_.call(null, k)) {
-      return cljs.core.reduce.call(null, function(p1__9360_SHARP_, p2__9361_SHARP_) {
-        return cljs.core.assoc.call(null, p1__9360_SHARP_, p2__9361_SHARP_, v);
+      return cljs.core.reduce.call(null, function(p1__9367_SHARP_, p2__9368_SHARP_) {
+        return cljs.core.assoc.call(null, p1__9367_SHARP_, p2__9368_SHARP_, v);
       }, m, k);
     } else {
       return cljs.core.assoc.call(null, m, k, v);
@@ -36748,319 +36916,319 @@ yantra.edn.edn_renderers = yantra.edn.thread_sets.call(null, cljs.core.Persisten
 cljs.core.PersistentArrayMap, cljs.core.PersistentHashMap], true), cljs.core.UUID, cljs.core.PersistentHashSet.fromArray([cljs.core.Subvec, cljs.core.RedNode, cljs.core.PersistentVector, cljs.core.BlackNode], true), cljs.core.PersistentHashSet.fromArray([cljs.core.PersistentTreeSet, cljs.core.PersistentHashSet], true), cljs.core.Symbol, String], [function(cursor, owner, opts) {
   return React.DOM.span(null, "nil");
 }, function(cursor, owner, opts) {
-  if (typeof yantra.edn.t9370 !== "undefined") {
+  if (typeof yantra.edn.t9377 !== "undefined") {
   } else {
-    yantra.edn.t9370 = function(opts, owner, cursor, meta9371) {
+    yantra.edn.t9377 = function(opts, owner, cursor, meta9378) {
       this.opts = opts;
       this.owner = owner;
       this.cursor = cursor;
-      this.meta9371 = meta9371;
+      this.meta9378 = meta9378;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
     };
-    yantra.edn.t9370.cljs$lang$type = true;
-    yantra.edn.t9370.cljs$lang$ctorStr = "yantra.edn/t9370";
-    yantra.edn.t9370.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
-      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9370");
+    yantra.edn.t9377.cljs$lang$type = true;
+    yantra.edn.t9377.cljs$lang$ctorStr = "yantra.edn/t9377";
+    yantra.edn.t9377.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
+      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9377");
     };
-    yantra.edn.t9370.prototype.om$core$IRender$ = true;
-    yantra.edn.t9370.prototype.om$core$IRender$render$arity$1 = function(_) {
+    yantra.edn.t9377.prototype.om$core$IRender$ = true;
+    yantra.edn.t9377.prototype.om$core$IRender$render$arity$1 = function(_) {
       var self__ = this;
       var ___$1 = this;
       return React.DOM.span(null, [cljs.core.str(om.core.value.call(null, self__.cursor))].join(""));
     };
-    yantra.edn.t9370.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9372) {
+    yantra.edn.t9377.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9379) {
       var self__ = this;
-      var _9372__$1 = this;
-      return self__.meta9371;
+      var _9379__$1 = this;
+      return self__.meta9378;
     };
-    yantra.edn.t9370.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9372, meta9371__$1) {
+    yantra.edn.t9377.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9379, meta9378__$1) {
       var self__ = this;
-      var _9372__$1 = this;
-      return new yantra.edn.t9370(self__.opts, self__.owner, self__.cursor, meta9371__$1);
+      var _9379__$1 = this;
+      return new yantra.edn.t9377(self__.opts, self__.owner, self__.cursor, meta9378__$1);
     };
-    yantra.edn.__GT_t9370 = function __GT_t9370(opts__$1, owner__$1, cursor__$1, meta9371) {
-      return new yantra.edn.t9370(opts__$1, owner__$1, cursor__$1, meta9371);
+    yantra.edn.__GT_t9377 = function __GT_t9377(opts__$1, owner__$1, cursor__$1, meta9378) {
+      return new yantra.edn.t9377(opts__$1, owner__$1, cursor__$1, meta9378);
     };
   }
-  return new yantra.edn.t9370(opts, owner, cursor, null);
+  return new yantra.edn.t9377(opts, owner, cursor, null);
 }, function(cursor, owner, opts) {
   var builder = om.core.get_shared.call(null, owner, new cljs.core.Keyword(null, "builder", "builder", 1244848909));
-  if (typeof yantra.edn.t9373 !== "undefined") {
+  if (typeof yantra.edn.t9380 !== "undefined") {
   } else {
-    yantra.edn.t9373 = function(builder, opts, owner, cursor, meta9374) {
+    yantra.edn.t9380 = function(builder, opts, owner, cursor, meta9381) {
       this.builder = builder;
       this.opts = opts;
       this.owner = owner;
       this.cursor = cursor;
-      this.meta9374 = meta9374;
+      this.meta9381 = meta9381;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
     };
-    yantra.edn.t9373.cljs$lang$type = true;
-    yantra.edn.t9373.cljs$lang$ctorStr = "yantra.edn/t9373";
-    yantra.edn.t9373.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
-      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9373");
+    yantra.edn.t9380.cljs$lang$type = true;
+    yantra.edn.t9380.cljs$lang$ctorStr = "yantra.edn/t9380";
+    yantra.edn.t9380.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
+      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9380");
     };
-    yantra.edn.t9373.prototype.om$core$IRender$ = true;
-    yantra.edn.t9373.prototype.om$core$IRender$render$arity$1 = function(_) {
+    yantra.edn.t9380.prototype.om$core$IRender$ = true;
+    yantra.edn.t9380.prototype.om$core$IRender$render$arity$1 = function(_) {
       var self__ = this;
       var ___$1 = this;
-      return yantra.edn.render_sequential.call(null, "(", function(p1__9366_SHARP_) {
-        return self__.builder.call(null, p1__9366_SHARP_);
+      return yantra.edn.render_sequential.call(null, "(", function(p1__9373_SHARP_) {
+        return self__.builder.call(null, p1__9373_SHARP_);
       }, " ", ")", self__.cursor);
     };
-    yantra.edn.t9373.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9375) {
+    yantra.edn.t9380.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9382) {
       var self__ = this;
-      var _9375__$1 = this;
-      return self__.meta9374;
+      var _9382__$1 = this;
+      return self__.meta9381;
     };
-    yantra.edn.t9373.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9375, meta9374__$1) {
+    yantra.edn.t9380.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9382, meta9381__$1) {
       var self__ = this;
-      var _9375__$1 = this;
-      return new yantra.edn.t9373(self__.builder, self__.opts, self__.owner, self__.cursor, meta9374__$1);
+      var _9382__$1 = this;
+      return new yantra.edn.t9380(self__.builder, self__.opts, self__.owner, self__.cursor, meta9381__$1);
     };
-    yantra.edn.__GT_t9373 = function __GT_t9373(builder__$1, opts__$1, owner__$1, cursor__$1, meta9374) {
-      return new yantra.edn.t9373(builder__$1, opts__$1, owner__$1, cursor__$1, meta9374);
+    yantra.edn.__GT_t9380 = function __GT_t9380(builder__$1, opts__$1, owner__$1, cursor__$1, meta9381) {
+      return new yantra.edn.t9380(builder__$1, opts__$1, owner__$1, cursor__$1, meta9381);
     };
   }
-  return new yantra.edn.t9373(builder, opts, owner, cursor, null);
+  return new yantra.edn.t9380(builder, opts, owner, cursor, null);
 }, function(cursor, owner, opts) {
-  if (typeof yantra.edn.t9376 !== "undefined") {
+  if (typeof yantra.edn.t9383 !== "undefined") {
   } else {
-    yantra.edn.t9376 = function(opts, owner, cursor, meta9377) {
+    yantra.edn.t9383 = function(opts, owner, cursor, meta9384) {
       this.opts = opts;
       this.owner = owner;
       this.cursor = cursor;
-      this.meta9377 = meta9377;
+      this.meta9384 = meta9384;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
     };
-    yantra.edn.t9376.cljs$lang$type = true;
-    yantra.edn.t9376.cljs$lang$ctorStr = "yantra.edn/t9376";
-    yantra.edn.t9376.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
-      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9376");
+    yantra.edn.t9383.cljs$lang$type = true;
+    yantra.edn.t9383.cljs$lang$ctorStr = "yantra.edn/t9383";
+    yantra.edn.t9383.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
+      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9383");
     };
-    yantra.edn.t9376.prototype.om$core$IRender$ = true;
-    yantra.edn.t9376.prototype.om$core$IRender$render$arity$1 = function(_) {
+    yantra.edn.t9383.prototype.om$core$IRender$ = true;
+    yantra.edn.t9383.prototype.om$core$IRender$render$arity$1 = function(_) {
       var self__ = this;
       var ___$1 = this;
       return React.DOM.span(null, [cljs.core.str(om.core.value.call(null, self__.cursor))].join(""));
     };
-    yantra.edn.t9376.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9378) {
+    yantra.edn.t9383.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9385) {
       var self__ = this;
-      var _9378__$1 = this;
-      return self__.meta9377;
+      var _9385__$1 = this;
+      return self__.meta9384;
     };
-    yantra.edn.t9376.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9378, meta9377__$1) {
+    yantra.edn.t9383.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9385, meta9384__$1) {
       var self__ = this;
-      var _9378__$1 = this;
-      return new yantra.edn.t9376(self__.opts, self__.owner, self__.cursor, meta9377__$1);
+      var _9385__$1 = this;
+      return new yantra.edn.t9383(self__.opts, self__.owner, self__.cursor, meta9384__$1);
     };
-    yantra.edn.__GT_t9376 = function __GT_t9376(opts__$1, owner__$1, cursor__$1, meta9377) {
-      return new yantra.edn.t9376(opts__$1, owner__$1, cursor__$1, meta9377);
+    yantra.edn.__GT_t9383 = function __GT_t9383(opts__$1, owner__$1, cursor__$1, meta9384) {
+      return new yantra.edn.t9383(opts__$1, owner__$1, cursor__$1, meta9384);
     };
   }
-  return new yantra.edn.t9376(opts, owner, cursor, null);
+  return new yantra.edn.t9383(opts, owner, cursor, null);
 }, function(cursor, owner, opts) {
   var builder = om.core.get_shared.call(null, owner, new cljs.core.Keyword(null, "builder", "builder", 1244848909));
-  if (typeof yantra.edn.t9379 !== "undefined") {
+  if (typeof yantra.edn.t9386 !== "undefined") {
   } else {
-    yantra.edn.t9379 = function(builder, opts, owner, cursor, meta9380) {
+    yantra.edn.t9386 = function(builder, opts, owner, cursor, meta9387) {
       this.builder = builder;
       this.opts = opts;
       this.owner = owner;
       this.cursor = cursor;
-      this.meta9380 = meta9380;
+      this.meta9387 = meta9387;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
     };
-    yantra.edn.t9379.cljs$lang$type = true;
-    yantra.edn.t9379.cljs$lang$ctorStr = "yantra.edn/t9379";
-    yantra.edn.t9379.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
-      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9379");
+    yantra.edn.t9386.cljs$lang$type = true;
+    yantra.edn.t9386.cljs$lang$ctorStr = "yantra.edn/t9386";
+    yantra.edn.t9386.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
+      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9386");
     };
-    yantra.edn.t9379.prototype.om$core$IRender$ = true;
-    yantra.edn.t9379.prototype.om$core$IRender$render$arity$1 = function(_) {
+    yantra.edn.t9386.prototype.om$core$IRender$ = true;
+    yantra.edn.t9386.prototype.om$core$IRender$render$arity$1 = function(_) {
       var self__ = this;
       var ___$1 = this;
-      return yantra.edn.render_sequential.call(null, "{", function(p1__9369_SHARP_) {
-        return React.DOM.span(null, [self__.builder.call(null, cljs.core.key.call(null, p1__9369_SHARP_)), " ", self__.builder.call(null, cljs.core.val.call(null, p1__9369_SHARP_), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "opts", "opts", 1017322386), self__.opts], null))]);
+      return yantra.edn.render_sequential.call(null, "{", function(p1__9376_SHARP_) {
+        return React.DOM.span(null, [self__.builder.call(null, cljs.core.key.call(null, p1__9376_SHARP_)), " ", self__.builder.call(null, cljs.core.val.call(null, p1__9376_SHARP_), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "opts", "opts", 1017322386), self__.opts], null))]);
       }, ", ", "}", self__.cursor);
     };
-    yantra.edn.t9379.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9381) {
+    yantra.edn.t9386.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9388) {
       var self__ = this;
-      var _9381__$1 = this;
-      return self__.meta9380;
+      var _9388__$1 = this;
+      return self__.meta9387;
     };
-    yantra.edn.t9379.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9381, meta9380__$1) {
+    yantra.edn.t9386.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9388, meta9387__$1) {
       var self__ = this;
-      var _9381__$1 = this;
-      return new yantra.edn.t9379(self__.builder, self__.opts, self__.owner, self__.cursor, meta9380__$1);
+      var _9388__$1 = this;
+      return new yantra.edn.t9386(self__.builder, self__.opts, self__.owner, self__.cursor, meta9387__$1);
     };
-    yantra.edn.__GT_t9379 = function __GT_t9379(builder__$1, opts__$1, owner__$1, cursor__$1, meta9380) {
-      return new yantra.edn.t9379(builder__$1, opts__$1, owner__$1, cursor__$1, meta9380);
+    yantra.edn.__GT_t9386 = function __GT_t9386(builder__$1, opts__$1, owner__$1, cursor__$1, meta9387) {
+      return new yantra.edn.t9386(builder__$1, opts__$1, owner__$1, cursor__$1, meta9387);
     };
   }
-  return new yantra.edn.t9379(builder, opts, owner, cursor, null);
+  return new yantra.edn.t9386(builder, opts, owner, cursor, null);
 }, function(cursor, owner, opts) {
   return React.DOM.span(null, "UUID");
 }, function(cursor, owner, opts) {
   var builder = om.core.get_shared.call(null, owner, new cljs.core.Keyword(null, "builder", "builder", 1244848909));
-  if (typeof yantra.edn.t9382 !== "undefined") {
+  if (typeof yantra.edn.t9389 !== "undefined") {
   } else {
-    yantra.edn.t9382 = function(builder, opts, owner, cursor, meta9383) {
+    yantra.edn.t9389 = function(builder, opts, owner, cursor, meta9390) {
       this.builder = builder;
       this.opts = opts;
       this.owner = owner;
       this.cursor = cursor;
-      this.meta9383 = meta9383;
+      this.meta9390 = meta9390;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
     };
-    yantra.edn.t9382.cljs$lang$type = true;
-    yantra.edn.t9382.cljs$lang$ctorStr = "yantra.edn/t9382";
-    yantra.edn.t9382.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
-      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9382");
+    yantra.edn.t9389.cljs$lang$type = true;
+    yantra.edn.t9389.cljs$lang$ctorStr = "yantra.edn/t9389";
+    yantra.edn.t9389.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
+      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9389");
     };
-    yantra.edn.t9382.prototype.om$core$IRender$ = true;
-    yantra.edn.t9382.prototype.om$core$IRender$render$arity$1 = function(_) {
+    yantra.edn.t9389.prototype.om$core$IRender$ = true;
+    yantra.edn.t9389.prototype.om$core$IRender$render$arity$1 = function(_) {
       var self__ = this;
       var ___$1 = this;
-      return yantra.edn.render_sequential.call(null, "[", function(p1__9367_SHARP_) {
-        return self__.builder.call(null, p1__9367_SHARP_);
+      return yantra.edn.render_sequential.call(null, "[", function(p1__9374_SHARP_) {
+        return self__.builder.call(null, p1__9374_SHARP_);
       }, " ", "]", self__.cursor);
     };
-    yantra.edn.t9382.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9384) {
+    yantra.edn.t9389.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9391) {
       var self__ = this;
-      var _9384__$1 = this;
-      return self__.meta9383;
+      var _9391__$1 = this;
+      return self__.meta9390;
     };
-    yantra.edn.t9382.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9384, meta9383__$1) {
+    yantra.edn.t9389.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9391, meta9390__$1) {
       var self__ = this;
-      var _9384__$1 = this;
-      return new yantra.edn.t9382(self__.builder, self__.opts, self__.owner, self__.cursor, meta9383__$1);
+      var _9391__$1 = this;
+      return new yantra.edn.t9389(self__.builder, self__.opts, self__.owner, self__.cursor, meta9390__$1);
     };
-    yantra.edn.__GT_t9382 = function __GT_t9382(builder__$1, opts__$1, owner__$1, cursor__$1, meta9383) {
-      return new yantra.edn.t9382(builder__$1, opts__$1, owner__$1, cursor__$1, meta9383);
+    yantra.edn.__GT_t9389 = function __GT_t9389(builder__$1, opts__$1, owner__$1, cursor__$1, meta9390) {
+      return new yantra.edn.t9389(builder__$1, opts__$1, owner__$1, cursor__$1, meta9390);
     };
   }
-  return new yantra.edn.t9382(builder, opts, owner, cursor, null);
+  return new yantra.edn.t9389(builder, opts, owner, cursor, null);
 }, function(cursor, owner, opts) {
   var builder = om.core.get_shared.call(null, owner, new cljs.core.Keyword(null, "builder", "builder", 1244848909));
-  if (typeof yantra.edn.t9385 !== "undefined") {
+  if (typeof yantra.edn.t9392 !== "undefined") {
   } else {
-    yantra.edn.t9385 = function(builder, opts, owner, cursor, meta9386) {
+    yantra.edn.t9392 = function(builder, opts, owner, cursor, meta9393) {
       this.builder = builder;
       this.opts = opts;
       this.owner = owner;
       this.cursor = cursor;
-      this.meta9386 = meta9386;
+      this.meta9393 = meta9393;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
     };
-    yantra.edn.t9385.cljs$lang$type = true;
-    yantra.edn.t9385.cljs$lang$ctorStr = "yantra.edn/t9385";
-    yantra.edn.t9385.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
-      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9385");
+    yantra.edn.t9392.cljs$lang$type = true;
+    yantra.edn.t9392.cljs$lang$ctorStr = "yantra.edn/t9392";
+    yantra.edn.t9392.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
+      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9392");
     };
-    yantra.edn.t9385.prototype.om$core$IRender$ = true;
-    yantra.edn.t9385.prototype.om$core$IRender$render$arity$1 = function(_) {
+    yantra.edn.t9392.prototype.om$core$IRender$ = true;
+    yantra.edn.t9392.prototype.om$core$IRender$render$arity$1 = function(_) {
       var self__ = this;
       var ___$1 = this;
-      return yantra.edn.render_sequential.call(null, "#{", function(p1__9368_SHARP_) {
-        return self__.builder.call(null, p1__9368_SHARP_);
+      return yantra.edn.render_sequential.call(null, "#{", function(p1__9375_SHARP_) {
+        return self__.builder.call(null, p1__9375_SHARP_);
       }, " ", "}", self__.cursor);
     };
-    yantra.edn.t9385.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9387) {
+    yantra.edn.t9392.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9394) {
       var self__ = this;
-      var _9387__$1 = this;
-      return self__.meta9386;
+      var _9394__$1 = this;
+      return self__.meta9393;
     };
-    yantra.edn.t9385.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9387, meta9386__$1) {
+    yantra.edn.t9392.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9394, meta9393__$1) {
       var self__ = this;
-      var _9387__$1 = this;
-      return new yantra.edn.t9385(self__.builder, self__.opts, self__.owner, self__.cursor, meta9386__$1);
+      var _9394__$1 = this;
+      return new yantra.edn.t9392(self__.builder, self__.opts, self__.owner, self__.cursor, meta9393__$1);
     };
-    yantra.edn.__GT_t9385 = function __GT_t9385(builder__$1, opts__$1, owner__$1, cursor__$1, meta9386) {
-      return new yantra.edn.t9385(builder__$1, opts__$1, owner__$1, cursor__$1, meta9386);
+    yantra.edn.__GT_t9392 = function __GT_t9392(builder__$1, opts__$1, owner__$1, cursor__$1, meta9393) {
+      return new yantra.edn.t9392(builder__$1, opts__$1, owner__$1, cursor__$1, meta9393);
     };
   }
-  return new yantra.edn.t9385(builder, opts, owner, cursor, null);
+  return new yantra.edn.t9392(builder, opts, owner, cursor, null);
 }, function(cursor, owner, opts) {
-  if (typeof yantra.edn.t9388 !== "undefined") {
+  if (typeof yantra.edn.t9395 !== "undefined") {
   } else {
-    yantra.edn.t9388 = function(opts, owner, cursor, meta9389) {
+    yantra.edn.t9395 = function(opts, owner, cursor, meta9396) {
       this.opts = opts;
       this.owner = owner;
       this.cursor = cursor;
-      this.meta9389 = meta9389;
+      this.meta9396 = meta9396;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
     };
-    yantra.edn.t9388.cljs$lang$type = true;
-    yantra.edn.t9388.cljs$lang$ctorStr = "yantra.edn/t9388";
-    yantra.edn.t9388.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
-      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9388");
+    yantra.edn.t9395.cljs$lang$type = true;
+    yantra.edn.t9395.cljs$lang$ctorStr = "yantra.edn/t9395";
+    yantra.edn.t9395.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
+      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9395");
     };
-    yantra.edn.t9388.prototype.om$core$IRender$ = true;
-    yantra.edn.t9388.prototype.om$core$IRender$render$arity$1 = function(_) {
+    yantra.edn.t9395.prototype.om$core$IRender$ = true;
+    yantra.edn.t9395.prototype.om$core$IRender$render$arity$1 = function(_) {
       var self__ = this;
       var ___$1 = this;
       return React.DOM.span(null, [cljs.core.str(om.core.value.call(null, self__.cursor))].join(""));
     };
-    yantra.edn.t9388.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9390) {
+    yantra.edn.t9395.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9397) {
       var self__ = this;
-      var _9390__$1 = this;
-      return self__.meta9389;
+      var _9397__$1 = this;
+      return self__.meta9396;
     };
-    yantra.edn.t9388.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9390, meta9389__$1) {
+    yantra.edn.t9395.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9397, meta9396__$1) {
       var self__ = this;
-      var _9390__$1 = this;
-      return new yantra.edn.t9388(self__.opts, self__.owner, self__.cursor, meta9389__$1);
+      var _9397__$1 = this;
+      return new yantra.edn.t9395(self__.opts, self__.owner, self__.cursor, meta9396__$1);
     };
-    yantra.edn.__GT_t9388 = function __GT_t9388(opts__$1, owner__$1, cursor__$1, meta9389) {
-      return new yantra.edn.t9388(opts__$1, owner__$1, cursor__$1, meta9389);
+    yantra.edn.__GT_t9395 = function __GT_t9395(opts__$1, owner__$1, cursor__$1, meta9396) {
+      return new yantra.edn.t9395(opts__$1, owner__$1, cursor__$1, meta9396);
     };
   }
-  return new yantra.edn.t9388(opts, owner, cursor, null);
+  return new yantra.edn.t9395(opts, owner, cursor, null);
 }, function(cursor, owner, opts) {
-  if (typeof yantra.edn.t9391 !== "undefined") {
+  if (typeof yantra.edn.t9398 !== "undefined") {
   } else {
-    yantra.edn.t9391 = function(opts, owner, cursor, meta9392) {
+    yantra.edn.t9398 = function(opts, owner, cursor, meta9399) {
       this.opts = opts;
       this.owner = owner;
       this.cursor = cursor;
-      this.meta9392 = meta9392;
+      this.meta9399 = meta9399;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
     };
-    yantra.edn.t9391.cljs$lang$type = true;
-    yantra.edn.t9391.cljs$lang$ctorStr = "yantra.edn/t9391";
-    yantra.edn.t9391.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
-      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9391");
+    yantra.edn.t9398.cljs$lang$type = true;
+    yantra.edn.t9398.cljs$lang$ctorStr = "yantra.edn/t9398";
+    yantra.edn.t9398.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
+      return cljs.core._write.call(null, writer__3971__auto__, "yantra.edn/t9398");
     };
-    yantra.edn.t9391.prototype.om$core$IRender$ = true;
-    yantra.edn.t9391.prototype.om$core$IRender$render$arity$1 = function(_) {
+    yantra.edn.t9398.prototype.om$core$IRender$ = true;
+    yantra.edn.t9398.prototype.om$core$IRender$render$arity$1 = function(_) {
       var self__ = this;
       var ___$1 = this;
-      return React.DOM.span(null, [cljs.core.str('"'), cljs.core.str(om.core.value.call(null, self__.cursor)), cljs.core.str('"')].join(""));
+      return React.DOM.span(null, cljs.core.pr_str.call(null, [cljs.core.str(om.core.value.call(null, self__.cursor))].join("")));
     };
-    yantra.edn.t9391.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9393) {
+    yantra.edn.t9398.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9400) {
       var self__ = this;
-      var _9393__$1 = this;
-      return self__.meta9392;
+      var _9400__$1 = this;
+      return self__.meta9399;
     };
-    yantra.edn.t9391.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9393, meta9392__$1) {
+    yantra.edn.t9398.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9400, meta9399__$1) {
       var self__ = this;
-      var _9393__$1 = this;
-      return new yantra.edn.t9391(self__.opts, self__.owner, self__.cursor, meta9392__$1);
+      var _9400__$1 = this;
+      return new yantra.edn.t9398(self__.opts, self__.owner, self__.cursor, meta9399__$1);
     };
-    yantra.edn.__GT_t9391 = function __GT_t9391(opts__$1, owner__$1, cursor__$1, meta9392) {
-      return new yantra.edn.t9391(opts__$1, owner__$1, cursor__$1, meta9392);
+    yantra.edn.__GT_t9398 = function __GT_t9398(opts__$1, owner__$1, cursor__$1, meta9399) {
+      return new yantra.edn.t9398(opts__$1, owner__$1, cursor__$1, meta9399);
     };
   }
-  return new yantra.edn.t9391(opts, owner, cursor, null);
+  return new yantra.edn.t9398(opts, owner, cursor, null);
 }]));
 goog.provide("yantra.plot");
 goog.require("cljs.core");
@@ -37093,10 +37261,10 @@ yantra.plot.list_line_plot_vega_values = function list_line_plot_vega_values(x) 
   if (cljs.core.truth_(temp__4090__auto__)) {
     var f = temp__4090__auto__;
     if (cljs.core.vector_QMARK_.call(null, f)) {
-      return cljs.core.mapv.call(null, function(p__9182) {
-        var vec__9183 = p__9182;
-        var x__$1 = cljs.core.nth.call(null, vec__9183, 0, null);
-        var y = cljs.core.nth.call(null, vec__9183, 1, null);
+      return cljs.core.mapv.call(null, function(p__9257) {
+        var vec__9258 = p__9257;
+        var x__$1 = cljs.core.nth.call(null, vec__9258, 0, null);
+        var y = cljs.core.nth.call(null, vec__9258, 1, null);
         return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "x", "x", 1013904362), x__$1, new cljs.core.Keyword(null, "y", "y", 1013904363), y], null);
       }, d);
     } else {
@@ -37120,103 +37288,111 @@ yantra.plot.list_line_plot_spec = function list_line_plot_spec(x) {
   [new cljs.core.Keyword(null, "value", "value", 1125876963), 2], null)], null)], null)], null)], null)], null);
 };
 yantra.plot.plot_renderers = new cljs.core.PersistentArrayMap.fromArray([yantra.datatypes.ListLinePlot, function(cursor, owner, opts) {
-  if (typeof yantra.plot.t9184 !== "undefined") {
+  if (typeof yantra.plot.t9259 !== "undefined") {
   } else {
-    yantra.plot.t9184 = function(opts, owner, cursor, meta9185) {
+    yantra.plot.t9259 = function(opts, owner, cursor, meta9260) {
       this.opts = opts;
       this.owner = owner;
       this.cursor = cursor;
-      this.meta9185 = meta9185;
+      this.meta9260 = meta9260;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
     };
-    yantra.plot.t9184.cljs$lang$type = true;
-    yantra.plot.t9184.cljs$lang$ctorStr = "yantra.plot/t9184";
-    yantra.plot.t9184.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
-      return cljs.core._write.call(null, writer__3971__auto__, "yantra.plot/t9184");
+    yantra.plot.t9259.cljs$lang$type = true;
+    yantra.plot.t9259.cljs$lang$ctorStr = "yantra.plot/t9259";
+    yantra.plot.t9259.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
+      return cljs.core._write.call(null, writer__3971__auto__, "yantra.plot/t9259");
     };
-    yantra.plot.t9184.prototype.om$core$IDidMount$ = true;
-    yantra.plot.t9184.prototype.om$core$IDidMount$did_mount$arity$2 = function(_, ___$1) {
+    yantra.plot.t9259.prototype.om$core$IDidMount$ = true;
+    yantra.plot.t9259.prototype.om$core$IDidMount$did_mount$arity$2 = function(_, ___$1) {
       var self__ = this;
       var ___$2 = this;
       return vg.parse.spec(cljs.core.clj__GT_js.call(null, yantra.plot.list_line_plot_spec.call(null, om.core.value.call(null, self__.cursor))), function(chart) {
         return chart.call(null, {"el":om.core.get_node.call(null, self__.owner, "theElt")}).update();
       });
     };
-    yantra.plot.t9184.prototype.om$core$IDidUpdate$ = true;
-    yantra.plot.t9184.prototype.om$core$IDidUpdate$did_update$arity$2 = function(_, ___$1) {
+    yantra.plot.t9259.prototype.om$core$IDidUpdate$ = true;
+    yantra.plot.t9259.prototype.om$core$IDidUpdate$did_update$arity$4 = function(this$, prev_props, prev_state, root_node) {
       var self__ = this;
-      var ___$2 = this;
+      var this$__$1 = this;
       return vg.parse.spec(cljs.core.clj__GT_js.call(null, yantra.plot.list_line_plot_spec.call(null, om.core.value.call(null, self__.cursor))), function(chart) {
         return chart.call(null, {"el":om.core.get_node.call(null, self__.owner, "theElt")}).update();
       });
     };
-    yantra.plot.t9184.prototype.om$core$IRender$ = true;
-    yantra.plot.t9184.prototype.om$core$IRender$render$arity$1 = function(_) {
+    yantra.plot.t9259.prototype.om$core$IRender$ = true;
+    yantra.plot.t9259.prototype.om$core$IRender$render$arity$1 = function(_) {
       var self__ = this;
       var ___$1 = this;
       return React.DOM.span({"ref":"theElt"}, "");
     };
-    yantra.plot.t9184.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9186) {
+    yantra.plot.t9259.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9261) {
       var self__ = this;
-      var _9186__$1 = this;
-      return self__.meta9185;
+      var _9261__$1 = this;
+      return self__.meta9260;
     };
-    yantra.plot.t9184.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9186, meta9185__$1) {
+    yantra.plot.t9259.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9261, meta9260__$1) {
       var self__ = this;
-      var _9186__$1 = this;
-      return new yantra.plot.t9184(self__.opts, self__.owner, self__.cursor, meta9185__$1);
+      var _9261__$1 = this;
+      return new yantra.plot.t9259(self__.opts, self__.owner, self__.cursor, meta9260__$1);
     };
-    yantra.plot.__GT_t9184 = function __GT_t9184(opts__$1, owner__$1, cursor__$1, meta9185) {
-      return new yantra.plot.t9184(opts__$1, owner__$1, cursor__$1, meta9185);
+    yantra.plot.__GT_t9259 = function __GT_t9259(opts__$1, owner__$1, cursor__$1, meta9260) {
+      return new yantra.plot.t9259(opts__$1, owner__$1, cursor__$1, meta9260);
     };
   }
-  return new yantra.plot.t9184(opts, owner, cursor, null);
+  return new yantra.plot.t9259(opts, owner, cursor, null);
 }, yantra.datatypes.BarChart, function(cursor, owner, opts) {
-  if (typeof yantra.plot.t9187 !== "undefined") {
+  if (typeof yantra.plot.t9262 !== "undefined") {
   } else {
-    yantra.plot.t9187 = function(opts, owner, cursor, meta9188) {
+    yantra.plot.t9262 = function(opts, owner, cursor, meta9263) {
       this.opts = opts;
       this.owner = owner;
       this.cursor = cursor;
-      this.meta9188 = meta9188;
+      this.meta9263 = meta9263;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
     };
-    yantra.plot.t9187.cljs$lang$type = true;
-    yantra.plot.t9187.cljs$lang$ctorStr = "yantra.plot/t9187";
-    yantra.plot.t9187.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
-      return cljs.core._write.call(null, writer__3971__auto__, "yantra.plot/t9187");
+    yantra.plot.t9262.cljs$lang$type = true;
+    yantra.plot.t9262.cljs$lang$ctorStr = "yantra.plot/t9262";
+    yantra.plot.t9262.cljs$lang$ctorPrWriter = function(this__3970__auto__, writer__3971__auto__, opt__3972__auto__) {
+      return cljs.core._write.call(null, writer__3971__auto__, "yantra.plot/t9262");
     };
-    yantra.plot.t9187.prototype.om$core$IDidMount$ = true;
-    yantra.plot.t9187.prototype.om$core$IDidMount$did_mount$arity$2 = function(_, ___$1) {
+    yantra.plot.t9262.prototype.om$core$IDidMount$ = true;
+    yantra.plot.t9262.prototype.om$core$IDidMount$did_mount$arity$2 = function(_, ___$1) {
       var self__ = this;
       var ___$2 = this;
       return vg.parse.spec(cljs.core.clj__GT_js.call(null, yantra.plot.bar_chart_spec.call(null, om.core.value.call(null, self__.cursor))), function(chart) {
         return chart.call(null, {"el":om.core.get_node.call(null, self__.owner, "theElt")}).update();
       });
     };
-    yantra.plot.t9187.prototype.om$core$IRender$ = true;
-    yantra.plot.t9187.prototype.om$core$IRender$render$arity$1 = function(_) {
+    yantra.plot.t9262.prototype.om$core$IDidUpdate$ = true;
+    yantra.plot.t9262.prototype.om$core$IDidUpdate$did_update$arity$4 = function(this$, prev_props, prev_state, root_node) {
+      var self__ = this;
+      var this$__$1 = this;
+      return vg.parse.spec(cljs.core.clj__GT_js.call(null, yantra.plot.bar_chart_spec.call(null, om.core.value.call(null, self__.cursor))), function(chart) {
+        return chart.call(null, {"el":om.core.get_node.call(null, self__.owner, "theElt")}).update();
+      });
+    };
+    yantra.plot.t9262.prototype.om$core$IRender$ = true;
+    yantra.plot.t9262.prototype.om$core$IRender$render$arity$1 = function(_) {
       var self__ = this;
       var ___$1 = this;
       return React.DOM.span({"ref":"theElt"}, "");
     };
-    yantra.plot.t9187.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9189) {
+    yantra.plot.t9262.prototype.cljs$core$IMeta$_meta$arity$1 = function(_9264) {
       var self__ = this;
-      var _9189__$1 = this;
-      return self__.meta9188;
+      var _9264__$1 = this;
+      return self__.meta9263;
     };
-    yantra.plot.t9187.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9189, meta9188__$1) {
+    yantra.plot.t9262.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_9264, meta9263__$1) {
       var self__ = this;
-      var _9189__$1 = this;
-      return new yantra.plot.t9187(self__.opts, self__.owner, self__.cursor, meta9188__$1);
+      var _9264__$1 = this;
+      return new yantra.plot.t9262(self__.opts, self__.owner, self__.cursor, meta9263__$1);
     };
-    yantra.plot.__GT_t9187 = function __GT_t9187(opts__$1, owner__$1, cursor__$1, meta9188) {
-      return new yantra.plot.t9187(opts__$1, owner__$1, cursor__$1, meta9188);
+    yantra.plot.__GT_t9262 = function __GT_t9262(opts__$1, owner__$1, cursor__$1, meta9263) {
+      return new yantra.plot.t9262(opts__$1, owner__$1, cursor__$1, meta9263);
     };
   }
-  return new yantra.plot.t9187(opts, owner, cursor, null);
+  return new yantra.plot.t9262(opts, owner, cursor, null);
 }], true, false);
 goog.provide("yantra.layout");
 goog.require("cljs.core");
@@ -37274,15 +37450,16 @@ goog.require("om.dom");
 goog.require("yantra.plot");
 goog.require("yantra.layout");
 goog.require("yantra.controls");
-yantra.test.tests = cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null, "column-2", "column-2", 4685450989), new cljs.core.Keyword(null, "plot-2", "plot-2", 4323529144), new cljs.core.Keyword(null, "column-1", "column-1", 4685450988), new cljs.core.Keyword(null, "plot-3", "plot-3", 4323529145), new cljs.core.Keyword(null, "edn-1", "edn-1", 1110266117), new cljs.core.Keyword(null, "edn-0", "edn-0", 1110266116), new cljs.core.Keyword(null, "plot-1", "plot-1", 4323529143), new cljs.core.Keyword(null, 
-"graphics-1", "graphics-1", 3304008929), new cljs.core.Keyword(null, "plot-4", "plot-4", 4323529146)], [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Column(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3], null))], null), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3, 6, 5, 4, 3, 1], null), null), new yantra.datatypes.Column(new cljs.core.PersistentVector(null, 
-3, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3], null)), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3, 6, 5, 4, 3, 1], null), null), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3, 6, 5, 4, 3, 1], null), null)], null), new cljs.core.PersistentVector(null, 
-9, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, "a", new cljs.core.Keyword(null, "a", "a", 1013904339), new cljs.core.Symbol(null, "a", "a", -1640531430, null), new cljs.core.PersistentArrayMap(null, 2, [1, 2, 3, 4], null), new yantra.datatypes.Slider(4, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 10], null)), new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 4, [1, null, 2, null, 3, null, 4, null], null), null), cljs.core._conj.call(null, 
-cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, 4), 3), 2), 1), new yantra.datatypes.Graphics(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 0], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 2], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 
-2, 5, cljs.core.PersistentVector.EMPTY_NODE, [2, 0], null), 1)], null))], null), 1, new yantra.datatypes.BarChart(new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 6, 5, 4], null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "labels", "labels", 4198454129), new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, ["a", "b", "c", "d", "e"], null)], null)), new yantra.datatypes.Column(new cljs.core.PersistentVector(null, 
-3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Slider(4, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 10], null)), new yantra.datatypes.Slider(5, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 10], null)), new yantra.datatypes.Graphics(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
-[0, 0], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [10, 2], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [2, 0], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [20, 0], null), 1)], null))], null)), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, 
-[new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 1], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [10, 4], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [11, 6], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [20, 40], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [30, 5], null)], null), null)]);
+yantra.test.tests = cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null, "column-2", "column-2", 4685450989), new cljs.core.Keyword(null, "plot-2", "plot-2", 4323529144), new cljs.core.Keyword(null, "string", "string", 4416885635), new cljs.core.Keyword(null, "column-1", "column-1", 4685450988), new cljs.core.Keyword(null, "plot-3", "plot-3", 4323529145), new cljs.core.Keyword(null, "edn-1", "edn-1", 1110266117), new cljs.core.Keyword(null, "edn-0", "edn-0", 1110266116), new cljs.core.Keyword(null, 
+"plot-1", "plot-1", 4323529143), new cljs.core.Keyword(null, "graphics-1", "graphics-1", 3304008929), new cljs.core.Keyword(null, "plot-4", "plot-4", 4323529146)], [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Column(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3], null))], null), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+[1, 2, 3, 6, 5, 4, 3, 1], null), null), 'a"b"c', new yantra.datatypes.Column(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3], null)), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3, 6, 5, 4, 3, 1], null), null), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+[1, 2, 3, 6, 5, 4, 3, 1], null), null)], null), new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, "a", new cljs.core.Keyword(null, "a", "a", 1013904339), new cljs.core.Symbol(null, "a", "a", -1640531430, null), new cljs.core.PersistentArrayMap(null, 2, [1, 2, 3, 4], null), new yantra.datatypes.Slider(4, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 10], null)), new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 
+4, [1, null, 2, null, 3, null, 4, null], null), null), cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, 4), 3), 2), 1), new yantra.datatypes.Graphics(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 0], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 
+2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 2], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [2, 0], null), 1)], null))], null), 1, new yantra.datatypes.BarChart(new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 6, 5, 4], null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "labels", "labels", 4198454129), new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+["a", "b", "c", "d", "e"], null)], null)), new yantra.datatypes.Column(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Slider(4, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 10], null)), new yantra.datatypes.Slider(5, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 10], null)), new yantra.datatypes.Graphics(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+[new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 0], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [10, 2], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [2, 0], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [20, 0], null), 
+1)], null))], null)), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 1], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [10, 4], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [11, 6], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+[20, 40], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [30, 5], null)], null), null)]);
 yantra.test.renderers = cljs.core.merge.call(null, yantra.graphics.graphics_renderers, yantra.controls.control_renderers, yantra.layout.layout_renderers, yantra.edn.edn_renderers, yantra.plot.plot_renderers);
 yantra.test.builder = function builder(x, y) {
   console.log(om.core.value.call(null, x));
@@ -37292,7 +37469,7 @@ yantra.test.builder = function builder(x, y) {
 };
 yantra.test.t = document.getElementById("root");
 yantra.test.start = function start() {
-  return om.core.root.call(null, cljs.core.atom.call(null, (new cljs.core.Keyword(null, "plot-4", "plot-4", 4323529146)).cljs$core$IFn$_invoke$arity$1(yantra.test.tests)), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "builder", "builder", 1244848909), yantra.test.builder], null), function(app, owner) {
+  return om.core.root.call(null, cljs.core.atom.call(null, (new cljs.core.Keyword(null, "string", "string", 4416885635)).cljs$core$IFn$_invoke$arity$1(yantra.test.tests)), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "builder", "builder", 1244848909), yantra.test.builder], null), function(app, owner) {
     return yantra.test.builder.call(null, app, cljs.core.PersistentArrayMap.EMPTY);
   }, document.getElementById("root"));
 };
@@ -37301,10 +37478,29 @@ goog.provide("yantra.datamappings");
 goog.require("cljs.core");
 goog.require("yantra.datatypes");
 goog.require("yantra.datatypes");
-yantra.datamappings.data_mappings = new cljs.core.PersistentVector(null, 10, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.Slider, new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.controls/Slider"], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.Column, new cljs.core.Keyword(null, "tag", 
+yantra.datamappings.data_mappings = new cljs.core.PersistentVector(null, 11, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.Slider, new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.controls/Slider"], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.Column, new cljs.core.Keyword(null, "tag", 
 "tag", 1014018828), "yantra.layout/Column"], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.Graphics, new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.graphics/Graphics"], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.Point, new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.graphics/Point"], null), new cljs.core.PersistentArrayMap(null, 
 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.Line, new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.graphics/Line"], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.Disk, new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.graphics/Disk"], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.Rectangle, 
 new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.graphics/Rectangle"], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.Style, new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.graphics/Style"], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.ListLinePlot, new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.plot/ListLinePlot"], 
-null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.BarChart, new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.plot/BarChart"], null)], null);
+null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.BarChart, new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.plot/BarChart"], null), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "record", "record", 4373962691), yantra.datatypes.HTMLElement, new cljs.core.Keyword(null, "tag", "tag", 1014018828), "yantra.dom/HTMLElement"], null)], null);
 goog.provide("yantra.dom");
 goog.require("cljs.core");
+goog.require("om.dom");
+goog.require("om.dom");
+goog.require("om.core");
+goog.require("om.core");
+goog.require("yantra.datatypes");
+goog.require("yantra.datatypes");
+yantra.dom.get_element = function get_element(e) {
+  return React.DOM[cljs.core.name.call(null, e)];
+};
+yantra.dom.dom_renderers = new cljs.core.PersistentArrayMap.fromArray([yantra.datatypes.HTMLElement, function(cursor, owner, opts) {
+  var v = om.core.value.call(null, cursor);
+  var tag = (new cljs.core.Keyword(null, "tag", "tag", 1014018828)).cljs$core$IFn$_invoke$arity$1(v);
+  var attributes = (new cljs.core.Keyword(null, "attributes", "attributes", 1419549897)).cljs$core$IFn$_invoke$arity$1(v);
+  var builder = om.core.get_shared.call(null, owner, new cljs.core.Keyword(null, "builder", "builder", 1244848909));
+  return cljs.core.apply.call(null, yantra.dom.get_element.call(null, tag), function() {
+    var obj9185 = {};
+    return obj9185;
+  }(), cljs.core.into_array.call(null, cljs.core.map.call(null, builder, (new cljs.core.Keyword(null, "children", "children", 2673430897)).cljs$core$IFn$_invoke$arity$1(cursor))));
+}], true, false);

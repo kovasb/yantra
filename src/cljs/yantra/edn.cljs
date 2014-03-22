@@ -115,7 +115,7 @@
      (fn [cursor owner opts]
        (reify
          om/IRender
-         (render [_] (dom/span nil (str "\"" (om/value cursor) "\"")))))
+         (render [_] (dom/span nil (pr-str (str (om/value cursor)))))))
     js/Number
      (fn [cursor owner opts]
        (reify

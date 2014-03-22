@@ -12,5 +12,6 @@
    {:record dt/Rectangle :tag "yantra.graphics/Rectangle"}
    {:record dt/Style :tag "yantra.graphics/Style"}
    {:record dt/ListLinePlot :tag "yantra.plot/ListLinePlot"}
-   {:record dt/BarChart :tag "yantra.plot/BarChart"}])
+   {:record dt/BarChart :tag "yantra.plot/BarChart"}
+   {:record dt/HTMLElement :tag "yantra.dom/HTMLElement"}])
 

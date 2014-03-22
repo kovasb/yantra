@@ -21,3 +21,7 @@
 (defrecord ListLinePlot [data opts])
 
 (defrecord BarChart [data opts])
+
+(defrecord HTMLElement [tag attributes children])
+
+

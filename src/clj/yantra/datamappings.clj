@@ -12,6 +12,7 @@
    {:record yantra.datatypes.Rectangle :tag "yantra.graphics/Rectangle"}
    {:record yantra.datatypes.Style :tag "yantra.graphics/Style"}
    {:record yantra.datatypes.ListLinePlot :tag "yantra.plot/ListLinePlot"}
-   {:record yantra.datatypes.BarChart :tag "yantra.plot/BarChart"}])
+   {:record yantra.datatypes.BarChart :tag "yantra.plot/BarChart"}
+   {:record yantra.datatypes.HTMLElement :tag "yantra.dom/HTMLElement"}])
 
 

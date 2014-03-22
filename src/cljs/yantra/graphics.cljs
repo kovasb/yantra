@@ -66,7 +66,7 @@
             heightdiff (/ (- newheight height) 2)]
         ;(js/alert (str "heightdiff" heightdiff))
         [  [xmin (- ymin heightdiff)] [xmax  (+ ymax heightdiff)]])
-      (do (js/alert (str "no aspect change" plotaspect " " imageaspect)) bounding-box))))
+      bounding-box)))
 
 
 

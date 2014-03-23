@@ -107,11 +107,18 @@
 
 
 
-
+(defn points-to-svg-string [points]
+  (apply str (interpose " " (map #(str (first %) "," (last %)) points))))
 
 (def graphics-renderers
 
-  {dt/Style (fn [cursor owner opts]
+  {
+   dt/Line (fn [cursor owner opts]
+              (let [ v (om/value cursor)
+                     coordfn (:coord-fn opts)]
+                (dom/polyline #js {:fill "none"  :points (points-to-svg-string (map coordfn (:points v)))})))
+
+   dt/Style (fn [cursor owner opts]
               (let [e (om/value cursor)
                     coordfn (:coord-fn opts)
                     distancefn (:distance-fn opts)
@@ -129,7 +136,7 @@
 
               )
 
-    dt/Point    (fn [cursor owner opts]
+  dt/Point    (fn [cursor owner opts]
              (let [p2 (:point (om/value cursor))]
                (dom/circle {:cx (first p2) :cy (last p2) :r "3"})))
 

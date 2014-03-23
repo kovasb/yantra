@@ -22,7 +22,7 @@
              builder (om/get-shared owner :builder)]
         (apply
           (get-element tag)
-          (js-obj attributes)
+          (clj->js attributes)
           (into-array
            (map builder (:children cursor))))))
     })

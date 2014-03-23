@@ -16,6 +16,7 @@
 (def tests
 
   {
+    :line (dt/Graphics. [(dt/Line. [[0 0] [0 1] [1 0]])])
     :string "a\"b\"c"
     :plot-1 (dt/BarChart. [1 2 6 5 4] {:labels ["a" "b" "c" "d" "e"]})
     :plot-2 (dt/ListLinePlot. [1 2 3 6 5 4 3 1] nil)
@@ -78,7 +79,7 @@
 (defn ^:export start []
   (let []
     (om/root
-      (atom (:string tests))
+      (atom (:line tests))
       {:builder builder}
       (fn [app owner]
         (builder app {}))

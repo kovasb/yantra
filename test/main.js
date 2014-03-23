@@ -36525,8 +36525,8 @@ goog.require("React");
 goog.require("yantra.datatypes");
 goog.require("yantra.datatypes");
 yantra.graphics.BoundingBox = function() {
-  var obj9221 = {};
-  return obj9221;
+  var obj9374 = {};
+  return obj9374;
 }();
 yantra.graphics.bounding_points = function bounding_points(x) {
   if (function() {
@@ -36608,16 +36608,16 @@ yantra.graphics.bounding_box = function bounding_box(g) {
   }
 };
 yantra.graphics.expand_plot_range = function expand_plot_range(bounding_box, image_size) {
-  var vec__9226 = bounding_box;
-  var vec__9227 = cljs.core.nth.call(null, vec__9226, 0, null);
-  var xmin = cljs.core.nth.call(null, vec__9227, 0, null);
-  var ymin = cljs.core.nth.call(null, vec__9227, 1, null);
-  var vec__9228 = cljs.core.nth.call(null, vec__9226, 1, null);
-  var xmax = cljs.core.nth.call(null, vec__9228, 0, null);
-  var ymax = cljs.core.nth.call(null, vec__9228, 1, null);
-  var vec__9229 = image_size;
-  var image_width = cljs.core.nth.call(null, vec__9229, 0, null);
-  var image_height = cljs.core.nth.call(null, vec__9229, 1, null);
+  var vec__9379 = bounding_box;
+  var vec__9380 = cljs.core.nth.call(null, vec__9379, 0, null);
+  var xmin = cljs.core.nth.call(null, vec__9380, 0, null);
+  var ymin = cljs.core.nth.call(null, vec__9380, 1, null);
+  var vec__9381 = cljs.core.nth.call(null, vec__9379, 1, null);
+  var xmax = cljs.core.nth.call(null, vec__9381, 0, null);
+  var ymax = cljs.core.nth.call(null, vec__9381, 1, null);
+  var vec__9382 = image_size;
+  var image_width = cljs.core.nth.call(null, vec__9382, 0, null);
+  var image_height = cljs.core.nth.call(null, vec__9382, 1, null);
   var width = Math.abs.call(null, xmax - xmin);
   var height = Math.abs.call(null, ymax - ymin);
   var plotaspect = height / width;
@@ -36631,36 +36631,36 @@ yantra.graphics.expand_plot_range = function expand_plot_range(bounding_box, ima
   }
 };
 yantra.graphics.coordinate_transformer = function coordinate_transformer(bounding_box, image_size) {
-  var vec__9236 = yantra.graphics.expand_plot_range.call(null, bounding_box, image_size);
-  var vec__9237 = cljs.core.nth.call(null, vec__9236, 0, null);
-  var xmin = cljs.core.nth.call(null, vec__9237, 0, null);
-  var ymin = cljs.core.nth.call(null, vec__9237, 1, null);
-  var vec__9238 = cljs.core.nth.call(null, vec__9236, 1, null);
-  var xmax = cljs.core.nth.call(null, vec__9238, 0, null);
-  var ymax = cljs.core.nth.call(null, vec__9238, 1, null);
-  var vec__9239 = image_size;
-  var image_width = cljs.core.nth.call(null, vec__9239, 0, null);
-  var image_height = cljs.core.nth.call(null, vec__9239, 1, null);
+  var vec__9389 = yantra.graphics.expand_plot_range.call(null, bounding_box, image_size);
+  var vec__9390 = cljs.core.nth.call(null, vec__9389, 0, null);
+  var xmin = cljs.core.nth.call(null, vec__9390, 0, null);
+  var ymin = cljs.core.nth.call(null, vec__9390, 1, null);
+  var vec__9391 = cljs.core.nth.call(null, vec__9389, 1, null);
+  var xmax = cljs.core.nth.call(null, vec__9391, 0, null);
+  var ymax = cljs.core.nth.call(null, vec__9391, 1, null);
+  var vec__9392 = image_size;
+  var image_width = cljs.core.nth.call(null, vec__9392, 0, null);
+  var image_height = cljs.core.nth.call(null, vec__9392, 1, null);
   var width = Math.abs.call(null, xmax - xmin);
   var height = Math.abs.call(null, ymax - ymin);
-  return function(p__9240) {
-    var vec__9241 = p__9240;
-    var x = cljs.core.nth.call(null, vec__9241, 0, null);
-    var y = cljs.core.nth.call(null, vec__9241, 1, null);
+  return function(p__9393) {
+    var vec__9394 = p__9393;
+    var x = cljs.core.nth.call(null, vec__9394, 0, null);
+    var y = cljs.core.nth.call(null, vec__9394, 1, null);
     return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(x - xmin) * (image_width / width), image_height - (y - ymin) * (image_height / height)], null);
   };
 };
 yantra.graphics.distance_transformer = function distance_transformer(bounding_box, image_size) {
-  var vec__9246 = bounding_box;
-  var vec__9247 = cljs.core.nth.call(null, vec__9246, 0, null);
-  var xmin = cljs.core.nth.call(null, vec__9247, 0, null);
-  var ymin = cljs.core.nth.call(null, vec__9247, 1, null);
-  var vec__9248 = cljs.core.nth.call(null, vec__9246, 1, null);
-  var xmax = cljs.core.nth.call(null, vec__9248, 0, null);
-  var ymax = cljs.core.nth.call(null, vec__9248, 1, null);
-  var vec__9249 = image_size;
-  var image_width = cljs.core.nth.call(null, vec__9249, 0, null);
-  var image_height = cljs.core.nth.call(null, vec__9249, 1, null);
+  var vec__9399 = bounding_box;
+  var vec__9400 = cljs.core.nth.call(null, vec__9399, 0, null);
+  var xmin = cljs.core.nth.call(null, vec__9400, 0, null);
+  var ymin = cljs.core.nth.call(null, vec__9400, 1, null);
+  var vec__9401 = cljs.core.nth.call(null, vec__9399, 1, null);
+  var xmax = cljs.core.nth.call(null, vec__9401, 0, null);
+  var ymax = cljs.core.nth.call(null, vec__9401, 1, null);
+  var vec__9402 = image_size;
+  var image_width = cljs.core.nth.call(null, vec__9402, 0, null);
+  var image_height = cljs.core.nth.call(null, vec__9402, 1, null);
   var width = Math.abs.call(null, xmax - xmin);
   var height = Math.abs.call(null, ymax - ymin);
   return function(d) {
@@ -36668,18 +36668,27 @@ yantra.graphics.distance_transformer = function distance_transformer(bounding_bo
   };
 };
 yantra.graphics.listplot = function listplot(l) {
-  return new yantra.datatypes.Graphics(cljs.core.vec.call(null, cljs.core.map_indexed.call(null, function(p1__9250_SHARP_, p2__9251_SHARP_) {
-    return new yantra.datatypes.Point(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [p1__9250_SHARP_, p2__9251_SHARP_], null));
+  return new yantra.datatypes.Graphics(cljs.core.vec.call(null, cljs.core.map_indexed.call(null, function(p1__9403_SHARP_, p2__9404_SHARP_) {
+    return new yantra.datatypes.Point(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [p1__9403_SHARP_, p2__9404_SHARP_], null));
   }, l)));
 };
-yantra.graphics.graphics_renderers = new cljs.core.PersistentArrayMap.fromArray([yantra.datatypes.Style, function(cursor, owner, opts) {
+yantra.graphics.points_to_svg_string = function points_to_svg_string(points) {
+  return cljs.core.apply.call(null, cljs.core.str, cljs.core.interpose.call(null, " ", cljs.core.map.call(null, function(p1__9405_SHARP_) {
+    return[cljs.core.str(cljs.core.first.call(null, p1__9405_SHARP_)), cljs.core.str(","), cljs.core.str(cljs.core.last.call(null, p1__9405_SHARP_))].join("");
+  }, points)));
+};
+yantra.graphics.graphics_renderers = new cljs.core.PersistentArrayMap.fromArray([yantra.datatypes.Line, function(cursor, owner, opts) {
+  var v = om.core.value.call(null, cursor);
+  var coordfn = (new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122)).cljs$core$IFn$_invoke$arity$1(opts);
+  return React.DOM.polyline({"points":yantra.graphics.points_to_svg_string.call(null, cljs.core.map.call(null, coordfn, (new cljs.core.Keyword(null, "points", "points", 4326117461)).cljs$core$IFn$_invoke$arity$1(v))), "fill":"none"});
+}, yantra.datatypes.Style, function(cursor, owner, opts) {
   var e = om.core.value.call(null, cursor);
   var coordfn = (new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122)).cljs$core$IFn$_invoke$arity$1(opts);
   var distancefn = (new cljs.core.Keyword(null, "distance-fn", "distance-fn", 4584217874)).cljs$core$IFn$_invoke$arity$1(opts);
   var builder = om.core.get_shared.call(null, owner, new cljs.core.Keyword(null, "builder", "builder", 1244848909));
   return React.DOM.g(cljs.core.clj__GT_js.call(null, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "style", "style", 1123684643), (new cljs.core.Keyword(null, "style", "style", 1123684643)).cljs$core$IFn$_invoke$arity$1(e)], null)), cljs.core.seq_QMARK_.call(null, (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(e)) || cljs.core.vector_QMARK_.call(null, (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(e)) ? 
-  cljs.core.into_array.call(null, cljs.core.map.call(null, function(p1__9252_SHARP_) {
-    return builder.call(null, p1__9252_SHARP_, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "opts", "opts", 1017322386), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122), coordfn, new cljs.core.Keyword(null, "distance-fn", "distance-fn", 4584217874), distancefn], null)], null));
+  cljs.core.into_array.call(null, cljs.core.map.call(null, function(p1__9406_SHARP_) {
+    return builder.call(null, p1__9406_SHARP_, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "opts", "opts", 1017322386), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122), coordfn, new cljs.core.Keyword(null, "distance-fn", "distance-fn", 4584217874), distancefn], null)], null));
   }, (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(cursor))) : builder.call(null, (new cljs.core.Keyword(null, "prims", "prims", 1120839167)).cljs$core$IFn$_invoke$arity$1(cursor), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "opts", "opts", 1017322386), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122), coordfn, new cljs.core.Keyword(null, "distance-fn", "distance-fn", 4584217874), 
   distancefn], null)], null)));
 }, yantra.datatypes.Point, function(cursor, owner, opts) {
@@ -36696,8 +36705,8 @@ yantra.graphics.graphics_renderers = new cljs.core.PersistentArrayMap.fromArray(
   var bb = yantra.graphics.bounding_box.call(null, (new cljs.core.Keyword(null, "contents", "contents", 4741549708)).cljs$core$IFn$_invoke$arity$1(om.core.value.call(null, cursor)));
   var coordfn = yantra.graphics.coordinate_transformer.call(null, bb, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [200, 200], null));
   var distancefn = yantra.graphics.distance_transformer.call(null, bb, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [200, 200], null));
-  return React.DOM.svg({"height":200, "width":200}, cljs.core.into_array.call(null, cljs.core.map.call(null, function(p1__9253_SHARP_) {
-    return builder.call(null, p1__9253_SHARP_, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "opts", "opts", 1017322386), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122), coordfn, new cljs.core.Keyword(null, "distance-fn", "distance-fn", 4584217874), distancefn], null)], null));
+  return React.DOM.svg({"height":200, "width":200}, cljs.core.into_array.call(null, cljs.core.map.call(null, function(p1__9407_SHARP_) {
+    return builder.call(null, p1__9407_SHARP_, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "opts", "opts", 1017322386), new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null, "coord-fn", "coord-fn", 4768239122), coordfn, new cljs.core.Keyword(null, "distance-fn", "distance-fn", 4584217874), distancefn], null)], null));
   }, (new cljs.core.Keyword(null, "contents", "contents", 4741549708)).cljs$core$IFn$_invoke$arity$1(cursor))));
 }], true, false);
 goog.provide("yantra.edn");
@@ -37451,14 +37460,15 @@ goog.require("yantra.plot");
 goog.require("yantra.layout");
 goog.require("yantra.controls");
 yantra.test.tests = cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null, "column-2", "column-2", 4685450989), new cljs.core.Keyword(null, "plot-2", "plot-2", 4323529144), new cljs.core.Keyword(null, "string", "string", 4416885635), new cljs.core.Keyword(null, "column-1", "column-1", 4685450988), new cljs.core.Keyword(null, "plot-3", "plot-3", 4323529145), new cljs.core.Keyword(null, "edn-1", "edn-1", 1110266117), new cljs.core.Keyword(null, "edn-0", "edn-0", 1110266116), new cljs.core.Keyword(null, 
-"plot-1", "plot-1", 4323529143), new cljs.core.Keyword(null, "graphics-1", "graphics-1", 3304008929), new cljs.core.Keyword(null, "plot-4", "plot-4", 4323529146)], [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Column(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3], null))], null), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, 
-[1, 2, 3, 6, 5, 4, 3, 1], null), null), 'a"b"c', new yantra.datatypes.Column(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3], null)), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3, 6, 5, 4, 3, 1], null), null), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, 
-[1, 2, 3, 6, 5, 4, 3, 1], null), null)], null), new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, "a", new cljs.core.Keyword(null, "a", "a", 1013904339), new cljs.core.Symbol(null, "a", "a", -1640531430, null), new cljs.core.PersistentArrayMap(null, 2, [1, 2, 3, 4], null), new yantra.datatypes.Slider(4, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 10], null)), new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 
-4, [1, null, 2, null, 3, null, 4, null], null), null), cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, 4), 3), 2), 1), new yantra.datatypes.Graphics(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 0], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 
+"plot-1", "plot-1", 4323529143), new cljs.core.Keyword(null, "graphics-1", "graphics-1", 3304008929), new cljs.core.Keyword(null, "line", "line", 1017226086), new cljs.core.Keyword(null, "plot-4", "plot-4", 4323529146)], [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Column(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3], null))], null), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 
+8, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3, 6, 5, 4, 3, 1], null), null), 'a"b"c', new yantra.datatypes.Column(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3], null)), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 8, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3, 6, 5, 4, 3, 1], null), null), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 
+8, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 3, 6, 5, 4, 3, 1], null), null)], null), new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, "a", new cljs.core.Keyword(null, "a", "a", 1013904339), new cljs.core.Symbol(null, "a", "a", -1640531430, null), new cljs.core.PersistentArrayMap(null, 2, [1, 2, 3, 4], null), new yantra.datatypes.Slider(4, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 10], null)), new cljs.core.PersistentHashSet(null, 
+new cljs.core.PersistentArrayMap(null, 4, [1, null, 2, null, 3, null, 4, null], null), null), cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core._conj.call(null, cljs.core.List.EMPTY, 4), 3), 2), 1), new yantra.datatypes.Graphics(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 0], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 
 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 2], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [2, 0], null), 1)], null))], null), 1, new yantra.datatypes.BarChart(new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 2, 6, 5, 4], null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "labels", "labels", 4198454129), new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, 
 ["a", "b", "c", "d", "e"], null)], null)), new yantra.datatypes.Column(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Slider(4, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 10], null)), new yantra.datatypes.Slider(5, new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 10], null)), new yantra.datatypes.Graphics(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, 
 [new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 0], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [10, 2], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [2, 0], null), 1), new yantra.datatypes.Disk(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [20, 0], null), 
-1)], null))], null)), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 1], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [10, 4], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [11, 6], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+1)], null))], null)), new yantra.datatypes.Graphics(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new yantra.datatypes.Line(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 0], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [0, 1], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
+[1, 0], null)], null))], null)), new yantra.datatypes.ListLinePlot(new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [1, 1], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [10, 4], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [11, 6], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, 
 [20, 40], null), new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [30, 5], null)], null), null)]);
 yantra.test.renderers = cljs.core.merge.call(null, yantra.graphics.graphics_renderers, yantra.controls.control_renderers, yantra.layout.layout_renderers, yantra.edn.edn_renderers, yantra.plot.plot_renderers);
 yantra.test.builder = function builder(x, y) {
@@ -37469,7 +37479,7 @@ yantra.test.builder = function builder(x, y) {
 };
 yantra.test.t = document.getElementById("root");
 yantra.test.start = function start() {
-  return om.core.root.call(null, cljs.core.atom.call(null, (new cljs.core.Keyword(null, "string", "string", 4416885635)).cljs$core$IFn$_invoke$arity$1(yantra.test.tests)), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "builder", "builder", 1244848909), yantra.test.builder], null), function(app, owner) {
+  return om.core.root.call(null, cljs.core.atom.call(null, (new cljs.core.Keyword(null, "line", "line", 1017226086)).cljs$core$IFn$_invoke$arity$1(yantra.test.tests)), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "builder", "builder", 1244848909), yantra.test.builder], null), function(app, owner) {
     return yantra.test.builder.call(null, app, cljs.core.PersistentArrayMap.EMPTY);
   }, document.getElementById("root"));
 };
@@ -37499,8 +37509,5 @@ yantra.dom.dom_renderers = new cljs.core.PersistentArrayMap.fromArray([yantra.da
   var tag = (new cljs.core.Keyword(null, "tag", "tag", 1014018828)).cljs$core$IFn$_invoke$arity$1(v);
   var attributes = (new cljs.core.Keyword(null, "attributes", "attributes", 1419549897)).cljs$core$IFn$_invoke$arity$1(v);
   var builder = om.core.get_shared.call(null, owner, new cljs.core.Keyword(null, "builder", "builder", 1244848909));
-  return cljs.core.apply.call(null, yantra.dom.get_element.call(null, tag), function() {
-    var obj9185 = {};
-    return obj9185;
-  }(), cljs.core.into_array.call(null, cljs.core.map.call(null, builder, (new cljs.core.Keyword(null, "children", "children", 2673430897)).cljs$core$IFn$_invoke$arity$1(cursor))));
+  return cljs.core.apply.call(null, yantra.dom.get_element.call(null, tag), cljs.core.clj__GT_js.call(null, attributes), cljs.core.into_array.call(null, cljs.core.map.call(null, builder, (new cljs.core.Keyword(null, "children", "children", 2673430897)).cljs$core$IFn$_invoke$arity$1(cursor))));
 }], true, false);

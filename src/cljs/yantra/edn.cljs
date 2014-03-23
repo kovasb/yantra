@@ -109,7 +109,7 @@
   (thread-sets
     {
     nil (fn [cursor owner opts] (dom/span nil "nil"))
-    UUID (fn [cursor owner opts] (dom/span nil "UUID"))
+    UUID (fn [cursor owner opts] (dom/span nil (pr-str (om/value cursor))))
 
     js/String
      (fn [cursor owner opts]

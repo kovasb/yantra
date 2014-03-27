@@ -140,7 +140,7 @@
              (let [p2 (:point (om/value cursor))]
                (dom/circle {:cx (first p2) :cy (last p2) :r "3"})))
 
-  dt/Disk     (fn [cursor owner opts]
+  dt/Disk   (fn [cursor owner opts]
              (let [coordfn (:coord-fn opts) distancefn (:distance-fn opts)]
                (let [v (om/value cursor)
                      p2 (coordfn (:point v))]

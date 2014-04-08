@@ -16,6 +16,9 @@
   ICloneable
   (-clone [n] (js/String. n)))
 
+(extend-type boolean
+  ICloneable
+  (-clone [n] (js/Boolean. n)))
 
 
 (defn render-sequential [begin render-one sep end sequence]
@@ -24,12 +27,13 @@
     (into-array
       (concat
         [begin]
-        (interpose sep (map render-one sequence))
+        (interpose sep (mapv render-one sequence))
         [end]
         ))))
 
 
-(deftype SequentialCursor [value state path shared]
+
+(deftype SequentialCursor [value state path]
   ISequential
   IDeref
   (-deref [this]
@@ -39,7 +43,7 @@
   IWithMeta
   (-with-meta [_ new-meta]
     (om/check
-      (SequentialCursor. (with-meta value new-meta) state path shared)))
+      (SequentialCursor. (with-meta value new-meta) state path)))
   IMeta
   (-meta [_] (om/check (meta value)))
   om/IValue
@@ -47,29 +51,28 @@
   om/ICursor
   (-path [_] (om/check path))
   (-state [_] (om/check state))
-  (-shared [_] shared)
   om/ITransact
   (-transact! [_ f]
     (swap! state f path))
   ICloneable
   (-clone [_]
-    (SequentialCursor. value state path shared))
+    (SequentialCursor. value state path))
   ICounted
   (-count [_]
     (om/check (-count value)))
   ICollection
   (-conj [_ o]
-    (om/check (SequentialCursor. (-conj value o) state path shared)))
+    (om/check (SequentialCursor. (-conj value o) state path)))
   ISeqable
   (-seq [this]
     (om/check
       (when (pos? (count value))
-        (map (fn [v i] (om/to-cursor v state (conj path i) shared)) value (range)))))
+        (map (fn [v i] (om/to-cursor v state (conj path i))) value (range)))))
   IStack
   (-peek [_]
-    (om/check (om/to-cursor (-peek value) state path shared)))
+    (om/check (om/to-cursor (-peek value) state path)))
   (-pop [_]
-    (om/check (om/to-cursor (-pop value) state path shared)))
+    (om/check (om/to-cursor (-pop value) state path)))
   IEquiv
   (-equiv [_ other]
     (om/check
@@ -84,9 +87,9 @@
 (defn extend-sequential-cursor [type]
   (extend-type type
     om/IToCursor
-    (-to-cursor [value state] (SequentialCursor. value state [] nil))
-    (-to-cursor [value state path] (SequentialCursor. value state path nil))
-    (-to-cursor [value state path shared] (SequentialCursor. value state path shared))))
+    (-to-cursor [value state] (SequentialCursor. value state []))
+    (-to-cursor [value state path] (SequentialCursor. value state path))
+    ))
 
 (map extend-sequential-cursor
      #{
@@ -121,6 +124,11 @@
        (reify
          om/IRender
          (render [_] (dom/span nil (str (om/value cursor))))))
+    js/Boolean
+      (fn [cursor owner opts]
+        (reify
+          om/IRender
+          (render [_] (dom/span nil (str (om/value cursor))))))
     Keyword
      (fn [cursor owner opts]
        (reify
@@ -144,10 +152,14 @@
     ;; vectors
     #{PersistentVector Subvec BlackNode RedNode}
      (fn [cursor owner opts]
-       (let [builder (om/get-shared owner :builder)] (reify
-                                        om/IRender
-                                        (render [_]
-                                          (render-sequential "[" #(builder %) " " "]" cursor)))))
+       (let [builder (om/get-shared owner :builder)]
+         (reify
+
+           om/IRender
+
+           (render [_]
+
+             (render-sequential "[" #(builder %) " " "]" cursor)))))
     ;; sets
     #{PersistentHashSet PersistentTreeSet}
      (fn [cursor owner opts]

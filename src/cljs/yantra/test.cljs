@@ -6,6 +6,7 @@
     [yantra.layout :as yl]
     [yantra.edn :as ye]
     [yantra.plot :as yp]
+    cljs.reader
     React
     [om.core :as om :include-macros true]
     [om.dom :as dom :include-macros true]))
@@ -17,6 +18,9 @@
 
   {
     :line (dt/Graphics. [(dt/Line. [[0 0] [0 1] [1 0]])])
+    :nested-list (list 1 2 3 (list 1 2 (list 1 2 3)))
+    :nested-list-2 (partition 2 [1 2 3 4])
+    :nested-list-3 (cljs.reader/read-string "(1 2 3 (1 2 3))")
     :string "a\"b\"c"
     :plot-1 (dt/BarChart. [1 2 6 5 4] {:labels ["a" "b" "c" "d" "e"]})
     :plot-2 (dt/ListLinePlot. [1 2 3 6 5 4 3 1] nil)
@@ -75,15 +79,17 @@
 (def t (.getElementById js/document "root"))
 
 
-
 (defn ^:export start []
   (let []
     (om/root
-      (atom (:line tests))
-      {:builder builder}
       (fn [app owner]
-        (builder app {}))
-      (.getElementById js/document "root"))))
+        (reify
+          om/IRender
+          (render [_]
+            (builder app nil))))
+      (atom (:nested-list-3 tests))
+      {:shared {:builder builder} :target (.getElementById js/document "root")})))
+
 
 
 

@@ -1,4 +1,5 @@
 (ns yantra.test
+  (:require-macros [cljs.core.async.macros :refer [go]])
   (:require
     [yantra.datatypes :as dt]
     [yantra.graphics :as yg]
@@ -9,7 +10,8 @@
     cljs.reader
     React
     [om.core :as om :include-macros true]
-    [om.dom :as dom :include-macros true]))
+    [om.dom :as dom :include-macros true]
+    [cljs.core.async :refer [>! <! chan close! put! take! sliding-buffer dropping-buffer timeout]]))
 
 
 
@@ -17,6 +19,22 @@
 (def tests
 
   {
+
+    :channel-1 (let [c (chan)]
+                 [(dt/Slider. 1 [1 10 1] c)
+                  (dt/ChannelDisplay. c :default)])
+
+    :channel-2 (let [c1 (chan) c2 (chan)]
+                 (go (loop []
+                       (>! c2 (+ 10 (<! c1)))
+                       (recur)))
+
+                 [(dt/Slider. 1 [1 10 1] c1)
+                  (dt/ChannelDisplay. c2 :default)])
+
+    ;; what about graphics? need to see the whole thing to calculate bounding box
+    ;; should have a protocol for wrapper things to return contents
+
     :line (dt/Graphics. [(dt/Line. [[0 0] [0 1] [1 0]])])
     :nested-list (list 1 2 3 (list 1 2 (list 1 2 3)))
     :nested-list-2 (partition 2 [1 2 3 4])
@@ -27,14 +45,19 @@
     :plot-3 [(dt/ListLinePlot. [1 2 3 6 5 4 3 1] nil) (dt/ListLinePlot. [1 2 3 6 5 4 3 1] nil)]
     :plot-4 (dt/ListLinePlot. [[1 1] [10 4] [11 6] [20 40] [30 5]] nil)
 
+
+
+
     :graphics-1
            (dt/Column.
              [(dt/Slider.
                 4
-                [1 10])
+                [1 10]
+                nil)
               (dt/Slider.
                 5
-                [1 10])
+                [1 10]
+                nil)
               (dt/Graphics.
                 [(dt/Disk. [0 0] 1)
                  (dt/Disk. [10 2] 1)
@@ -50,7 +73,7 @@
             :a
             'a
             {1 2 3 4}
-            (dt/Slider. 4 [1 10])
+            (dt/Slider. 4 [1 10] nil)
             #{1 2 3 4}
             (list 1 2 3 4)
             (dt/Graphics.
@@ -87,7 +110,7 @@
           om/IRender
           (render [_]
             (builder app nil))))
-      (atom (:nested-list-3 tests))
+      (atom (:channel-2 tests))
       {:shared {:builder builder} :target (.getElementById js/document "root")})))
 
 

@@ -1,6 +1,6 @@
 (ns yantra.datatypes)
 
-(defrecord Slider [value range])
+(defrecord Slider [value range channel])
 
 (defrecord Column [contents])
 
@@ -22,6 +22,7 @@
 
 (defrecord HTMLElement [tag attributes children])
 
+(defrecord ChannelDisplay [channel value])
 
 
 

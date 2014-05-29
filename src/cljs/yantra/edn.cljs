@@ -8,17 +8,31 @@
 
 
 
-(extend-type number
-  ICloneable
-  (-clone [n] (js/Number. n)))
+(defn primitive? [x]
+  (let [t (goog/typeOf x)]
+    (case t
+      "number" true
+      "string" true
+      "boolean" true
+      "null" true
+      false)))
 
-(extend-type string
-  ICloneable
-  (-clone [n] (js/String. n)))
 
-(extend-type boolean
-  ICloneable
-  (-clone [n] (js/Boolean. n)))
+(comment
+
+  (extend-type number
+   ICloneable
+   (-clone [n] (js/Number. n)))
+
+  (extend-type string
+    ICloneable
+    (-clone [n] (js/String. n)))
+
+  (extend-type boolean
+    ICloneable
+    (-clone [n] (js/Boolean. n)))
+  )
+
 
 
 (defn render-sequential [begin render-one sep end sequence]
@@ -27,10 +41,16 @@
     (into-array
       (concat
         [begin]
-        (interpose sep (mapv render-one sequence))
+        (interpose sep (mapcat
+                         (fn [elts]
+                           (if (primitive? (first elts))
+                             [(apply str (interpose sep (map pr-str elts)))]
+                             (map render-one elts)))
+                         (partition-by primitive? sequence)))
         [end]
         ))))
 
+split-with
 
 
 (deftype SequentialCursor [value state path]
@@ -148,7 +168,7 @@
          (reify
            om/IRender
            (render [_]
-             (render-sequential "(" #(builder %) " " ")" cursor)))))
+             (render-sequential "(" #(if (primitive? %) (do  (pr-str %)) (builder %)) " " ")" cursor)))))
     ;; vectors
     #{PersistentVector Subvec BlackNode RedNode}
      (fn [cursor owner opts]
@@ -159,7 +179,7 @@
 
            (render [_]
 
-             (render-sequential "[" #(builder %) " " "]" cursor)))))
+             (render-sequential "[" #(if (primitive? %) (pr-str %) (builder %)) " " "]" cursor)))))
     ;; sets
     #{PersistentHashSet PersistentTreeSet}
      (fn [cursor owner opts]
@@ -167,7 +187,7 @@
          (reify
            om/IRender
            (render [_]
-             (render-sequential "#{" #(builder %) " " "}" cursor)))))
+             (render-sequential "#{" #(if (primitive? %) (pr-str %) (builder %)) " " "}" cursor)))))
     ;; maps
     #{PersistentArrayMap PersistentHashMap PersistentTreeMap}
      (fn [cursor owner opts]
@@ -176,9 +196,11 @@
            om/IRender
            (render [_]
              (render-sequential "{"
-                                #(dom/span
-                                  nil
-                                  #js [(builder (key %)) " " (builder (val %) {:opts opts})])
+                                #(if (and (primitive? (key %)) (primitive? (val %)))
+                                    (pr-str (key %) " " (val %))
+                                    (dom/span
+                                    nil
+                                    #js [(builder (key %)) " " (builder (val %) {:opts opts})]))
                                 ", "
                                 "}"
                                 cursor)))))

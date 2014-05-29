@@ -1,6 +1,6 @@
 (ns yantra.datatypes)
 
-(defrecord Slider [value range])
+(defrecord Slider [value range channel])
 
 (defrecord Column [contents])
 
